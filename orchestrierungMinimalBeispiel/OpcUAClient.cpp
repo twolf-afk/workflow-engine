@@ -35,7 +35,7 @@ bool OpcUAClient::writeStringToNode(std::string value, std::string identifier)
     UA_Variant variant;
     UA_Variant_setScalar(&variant, &value, &UA_TYPES[UA_TYPES_STRING]);
 
-    UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, UA_NODEID_STRING(1, chIdentifier), &variant);
+    UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, UA_NODEID_STRING(4, chIdentifier), &variant);
     UA_Variant_clear(&variant);
 
     if (statusCode != UA_STATUSCODE_GOOD) {
