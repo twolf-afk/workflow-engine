@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<definitions
+
+name="StockQuote"
+targetNamespace="http://example.com/stockquote.wsdl"
+xmlns:tns="http://example.com/stockquote.wsdl"
+xmlns:xsd1="http://example.com/stockquote.xsd"
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+	
+
+	<service name="turnLightOnAndOff">
+        <documentation>This Service turns the light at the switch on and of</documentation>
+        <port name="HWD_Light" binding="tns:LightTrigger">
+           <soap:address location="opc.tcp://DESKTOP-0AULV4D:4840/"/>
+        </port>
+    </service>
+
+	<portType name="HWD">
+        <operation name="turnLightOnAndOff">
+           <input message="LightSwitch"/>
+           <output message="LightsStatus"/>
+        </operation>
+    </portType>
+	
+	<message name="LightSwitch">
+        <part name="body" element="xsd1:Switch"/>
+    </message>
+
+    <message name="LightsStatus">
+        <part name="body" element="xsd1:Status"/>
+    </message>
+
+    <types>
+       <schema targetNamespace="http://example.com/stockquote.xsd" xmlns="http://www.w3.org/2000/10/XMLSchema">
+           <element name="Switch">
+              <complexType>
+                  <all>
+                      <element name="switchOn" type="boolean" value="false"/>
+                  </all>
+              </complexType>
+           </element>
+           <element name="Status">
+              <complexType>
+                  <all>
+                      <element name="status" type="boolean"/>
+                  </all>
+              </complexType>
+           </element>
+       </schema>
+    </types>
+
+</definitions>
