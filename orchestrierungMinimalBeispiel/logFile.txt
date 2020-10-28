@@ -2221,3 +2221,157 @@
 [2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 91] Set URL to: opc.tcp://172.16.2.50/
 [2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 104] OPC UA input node: |var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.SteuerWort
 [2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 105] Input value: 1151
+[2020-10-28.10:43:04][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:43:04][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:43:04][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:43:04][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:43:04][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:43:49][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:43:49][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:43:49][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:43:49][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:43:50][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:44:19][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:44:19][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:44:19][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:44:19][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:44:19][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:44:23][DEBUG][class OpcUAClient][Line: 42] Error, could not write value: 1151 to identifier: 19376.currNodeId
+[2020-10-28.10:45:34][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:45:34][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:45:34][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:45:34][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:45:34][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:46:19][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:46:20][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:46:20][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:46:20][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:46:20][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:56:17][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:56:17][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:56:17][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:56:17][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:56:18][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:57:59][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:57:59][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.10:57:59][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.10:57:59][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.10:57:59][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.10:58:10][DEBUG][class OpcUAClient][Line: 37] Identifier: 19376.currNodeId
+[2020-10-28.11:03:02][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.11:03:02][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.11:03:02][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.11:03:02][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.11:03:03][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.11:03:05][DEBUG][class OpcUAClient][Line: 45] Error, could not write value: 1151 to identifier: 
+[2020-10-28.11:25:27][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.11:25:27][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.11:25:27][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.11:25:27][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.11:25:28][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.11:25:31][DEBUG][class OpcUAClient][Line: 48] Error, could not write value: 1151 to identifier: 
+[2020-10-28.11:27:22][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.11:27:22][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.11:27:22][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.11:27:22][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.11:27:22][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.11:27:28][DEBUG][class OpcUAClient][Line: 54] Writing successful
+[2020-10-28.11:29:47][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.11:29:47][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.11:29:47][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.11:29:47][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.11:29:48][DEBUG][class OpcUAClient][Line: 25] Create and connect client successful
+[2020-10-28.11:29:48][DEBUG][class OpcUAClient][Line: 32] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:05:43][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:05:43][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:05:43][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:05:43][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:05:43][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:05:43][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:07:41][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:07:41][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:07:41][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:07:41][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:07:41][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:07:41][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:08:12][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:08:12][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:08:12][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:08:12][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:08:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:08:12][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:10:44][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:10:44][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:10:44][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:10:44][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:10:45][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:10:45][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:11:22][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:11:22][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:11:22][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:11:22][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:11:23][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:11:23][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:11:23][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:12:10][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:12:10][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:12:10][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:12:10][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:12:10][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:12:10][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:12:10][DEBUG][class OpcUAClient][Line: 63] Error code: BadNodeIdUnknown
+[2020-10-28.14:12:10][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:16:45][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:16:45][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:16:46][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.currNodeId
+[2020-10-28.14:16:46][DEBUG][class xmlParser][Line: 107] Input value: 1151
+[2020-10-28.14:16:46][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:16:46][DEBUG][class OpcUAClient][Line: 46] Writing value: 1151 to node: ns=2;s=19376.currNodeId
+[2020-10-28.14:38:33][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:38:33][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:38:33][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.description
+[2020-10-28.14:38:33][DEBUG][class xmlParser][Line: 107] Input value: hello world
+[2020-10-28.14:38:34][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:38:34][DEBUG][class OpcUAClient][Line: 45] Writing value: hello world to node: ns=2;s=19376.description
+[2020-10-28.14:38:34][DEBUG][class OpcUAClient][Line: 63] Error code: BadInternalError
+[2020-10-28.14:38:34][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:40:18][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:40:18][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:40:18][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.description
+[2020-10-28.14:40:18][DEBUG][class xmlParser][Line: 107] Input value: hello world
+[2020-10-28.14:40:18][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:40:18][DEBUG][class OpcUAClient][Line: 45] Writing value: hello world to node: ns=2;s=19376.description
+[2020-10-28.14:41:32][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:41:32][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:41:32][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.description
+[2020-10-28.14:41:32][DEBUG][class xmlParser][Line: 107] Input value: hello world
+[2020-10-28.14:41:33][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:41:33][DEBUG][class OpcUAClient][Line: 45] Writing value: hello world to node: ns=2;s=19376.description
+[2020-10-28.14:44:40][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:44:40][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:44:40][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.local
+[2020-10-28.14:44:40][DEBUG][class xmlParser][Line: 107] Input value: true
+[2020-10-28.14:44:40][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:44:40][DEBUG][class OpcUAClient][Line: 45] Writing value: true to node: ns=2;s=19376.local
+[2020-10-28.14:44:44][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:45:05][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:45:05][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:45:05][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.local
+[2020-10-28.14:45:05][DEBUG][class xmlParser][Line: 107] Input value: false
+[2020-10-28.14:45:05][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:45:05][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-28.14:45:05][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:45:24][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:45:24][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:45:24][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.local
+[2020-10-28.14:45:24][DEBUG][class xmlParser][Line: 107] Input value: false
+[2020-10-28.14:45:24][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:45:24][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-28.14:45:24][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-28.14:57:02][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.14:57:02][DEBUG][class xmlParser][Line: 93] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-28.14:57:02][DEBUG][class xmlParser][Line: 106] OPC UA input node: 19376.local
+[2020-10-28.14:57:02][DEBUG][class xmlParser][Line: 107] Input value: false
+[2020-10-28.14:57:02][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-28.14:57:02][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-28.14:57:02][DEBUG][class wsdlHandler][Line: 55] Writing done

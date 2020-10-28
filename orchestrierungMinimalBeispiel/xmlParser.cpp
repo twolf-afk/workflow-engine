@@ -58,6 +58,8 @@ void xmlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 {
     xercesc_3_2::XMLPlatformUtils::Initialize();
 
+    // TODO eigene Exception schreiben
+    // TODO aufruf von try und catch block in eigene funktionen auslagern
     try
     {
         xercesc_3_2::XercesDOMParser* parser = new xercesc_3_2::XercesDOMParser();

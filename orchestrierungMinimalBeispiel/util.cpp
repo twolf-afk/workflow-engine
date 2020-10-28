@@ -30,3 +30,12 @@ std::string util::stringToUpperCaseString(std::string string)
 	boost::to_upper(string);
 	return string;
 }
+
+char* util::stringToChar(std::string string)
+{
+
+	rsize_t lengthOfChar = string.length() + 1;
+	char* Char = new char[lengthOfChar];
+	strcpy_s(Char, lengthOfChar, string.c_str());
+	return Char;
+}

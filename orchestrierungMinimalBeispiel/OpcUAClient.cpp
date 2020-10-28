@@ -1,6 +1,8 @@
 #include "OpcUAClient.h"
 
 #include "logUtil.h"
+#include "util.h"
+#include "OpcUAException.h"
 
 #include <open62541/client_config_default.h>
 
@@ -27,28 +29,42 @@ bool OpcUAClient::createAndConnectClient(std::string url)
     }
 }
 
-bool OpcUAClient::writeStringToNode(std::string value, std::string identifier)
+UA_StatusCode OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 {
-    char *chIdentifier = new char[identifier.length() + 1];
-    strcpy(chIdentifier, identifier.c_str());
+    UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, nodeID, &variant);
 
-    UA_Variant variant;
-    UA_Variant_setScalar(&variant, &value, &UA_TYPES[UA_TYPES_STRING]);
-
-    UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, UA_NODEID_STRING(4, chIdentifier), &variant);
-    UA_Variant_clear(&variant);
-
-    if (statusCode != UA_STATUSCODE_GOOD) {
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error, could not write value: " + value + " to identifier: " + identifier);
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + statusCode);
-        return false;
-    }
-    else
+    if (statusCode != UA_STATUSCODE_GOOD)
     {
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Writing successful");
-        return true;
+        throw OpcUAException(statusCode);
     }
 
-    return statusCode;
+}
 
+void OpcUAClient::writeService(std::string value, std::string identifier)
+{
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Writing value: " + value + " to node: ns=2;s=" + identifier);
+    
+    try
+    {
+        // TODO der identifier der nodeID kann auch bytestring, guid o.ä. sein -> auslagern in eigene Methoden
+        // TODO namespaceIndex variable gestalten
+        char* chIdentifier = util::stringToChar(identifier);
+        const UA_NodeId nodeID = UA_NODEID_STRING(2, chIdentifier);
+
+        // TODO neben in16 gibt es noch viele weitere datentypen, hierzu jeweils eine methode erstelleb, ggf. mit vererbung, abstraktion, interfaces etc.
+        UA_Variant variant;
+        UA_Variant_setScalar(&variant, &value, &UA_TYPES[UA_TYPES_BOOLEAN]);
+
+        UA_StatusCode statusCode = writeValue(nodeID, variant);
+        
+    }
+    catch (OpcUAException& error)
+    {
+        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
+    }
+}
+
+void OpcUAClient::cleanClient()
+{
+    UA_Client_delete(client);
 }

@@ -145,8 +145,8 @@
   <ItemGroup>
     <ClCompile Include="configFileUtil.cpp" />
     <ClCompile Include="logUtil.cpp" />
-    <ClCompile Include="opcua.cpp" />
     <ClCompile Include="opcuaClient.cpp" />
+    <ClCompile Include="OpcUAException.cpp" />
     <ClCompile Include="orchestrierungMinimalBeispiel.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="wsdlHandler.cpp" />
@@ -156,8 +156,8 @@
   <ItemGroup>
     <ClInclude Include="configFileUtil.h" />
     <ClInclude Include="logUtil.h" />
-    <ClInclude Include="opcua.h" />
     <ClInclude Include="opcuaClient.h" />
+    <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="orchestrierungMinimalBeispiel.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="wsdlHandler.h" />

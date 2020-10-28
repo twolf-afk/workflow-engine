@@ -1,8 +1,8 @@
-﻿  wsdlHandler.cpp
-  xmlParser.cpp
+﻿  opcuaClient.cpp
+  wsdlHandler.cpp
   Code wird generiert.
-  0 of 524 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
+  3 of 530 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Codegenerierung ist abgeschlossen.
   orchestrierungMinimalBeispiel.vcxproj -> D:\Arbeit\MSVisualStudio_Workspace\orchestrierungMinimalBeispiel\x64\Release\orchestrierungMinimalBeispiel.exe
