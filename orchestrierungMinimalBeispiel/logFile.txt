@@ -2212,3 +2212,12 @@
 [2020-10-27.11:47:09][DEBUG][class xmlParser][Line: 103] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
 [2020-10-27.11:47:15][DEBUG][class xmlParser][Line: 117] OPC UA input node: switchOn
 [2020-10-27.11:47:15][DEBUG][class xmlParser][Line: 118] value: false
+[2020-10-28.10:04:57][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:04:58][DEBUG][class xmlParser][Line: 91] Set URL to: opc.tcp://172.16.2.50/
+[2020-10-28.10:04:58][DEBUG][class xmlParser][Line: 104] OPC UA input node: |var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.SteuerWort
+[2020-10-28.10:04:58][DEBUG][class xmlParser][Line: 105] Input value: 1151
+[2020-10-28.10:05:03][DEBUG][class OpcUAClient][Line: 19] Error, could not create and connect client
+[2020-10-28.10:05:51][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 91] Set URL to: opc.tcp://172.16.2.50/
+[2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 104] OPC UA input node: |var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.SteuerWort
+[2020-10-28.10:05:51][DEBUG][class xmlParser][Line: 105] Input value: 1151
