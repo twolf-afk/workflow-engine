@@ -10,7 +10,7 @@ void wsdlHandler::readWsdlFile(std::string fileName)
 {
 
 	xmlParser xml = xmlParser();
-	xml.initXmlParserGetDocumentGetRootElement("testService.wsdl");
+	xml.initXmlParserGetDocumentGetRootElement(fileName);
 
 	xml.getUrlFromDocument();
 
@@ -22,25 +22,8 @@ void wsdlHandler::readWsdlFile(std::string fileName)
 
 	std::string opcuaNodeName = xml.getInputOpcUaNodeName();
 	std::string value = xml.getInputValue();
-	client.writeStringToNode(value, opcuaNodeName);
-
-
-	// open file anhand von service namen
-
-	// durchsuche file nach url zum service
-
-	// durchsuche file nach porttype
-		// suche dort nach input
-
-	// suche nach message mit namen aus input
-
-	// suche danach in types, schema, das element mit namen aus message
+	client.writeService(value, opcuaNodeName);
 	
-	// nimm dann dort den namen (NodeID) und den Wert der elements
-
-	// erstelle opc ua client
-	// verbinde diesen
-	// schreibe wert
 	
 	// durchsuche file nach porttype
 		// suche dort nach output
@@ -51,6 +34,7 @@ void wsdlHandler::readWsdlFile(std::string fileName)
 
 	// nimm dann dort den namen (NodeID) und lese den Wert so lange bis dieser einen fertigen Prozess anzeigt
 
+	client.cleanClient();
 
-	logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlHandler).name(), __LINE__, "Writing done");
+	logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlHandler).name(), __LINE__, "Execution of service: " + fileName + " done");
 }

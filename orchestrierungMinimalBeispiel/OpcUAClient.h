@@ -12,14 +12,18 @@ class OpcUAClient
 
 private:
 
-	UA_Client* client;;
+	UA_Client* client;
+
+	UA_StatusCode writeValue(UA_NodeId nodeID, UA_Variant variant);
 
 public:
 
 
 	bool createAndConnectClient(std::string url);
 
-	bool writeStringToNode(std::string value, std::string nodeID);
+	void writeService(std::string value, std::string nodeID);
+
+	void cleanClient();
 
 };
 

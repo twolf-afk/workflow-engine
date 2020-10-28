@@ -13,7 +13,7 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
 	<service name="turnLightOnAndOff">
         <documentation>This Service turns the light at the switch on and of</documentation>
         <port name="HWD_Light" binding="tns:LightTrigger">
-           <soap:address location="opc.tcp://172.16.2.50/"/>
+           <soap:address location="opc.tcp://141.58.122.40:4841"/>
         </port>
     </service>
 
@@ -37,7 +37,7 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
            <element name="Switch">
               <complexType>
                   <all>
-                      <element name="|var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.SteuerWort" type="int" value="1151"/>
+                      <element name="19376.local" type="boolean" value="false"/>
                   </all>
               </complexType>
            </element>
