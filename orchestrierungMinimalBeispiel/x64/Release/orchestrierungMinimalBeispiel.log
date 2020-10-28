@@ -1,3 +1,8 @@
 ﻿  wsdlHandler.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\msxml.h(8185,1): error C2371: "DOMDocument": Neudefinition; unterschiedliche Basistypen
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\msxml.h(182): message : Siehe Deklaration von "DOMDocument"
+  xmlParser.cpp
+  Code wird generiert.
+  0 of 524 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  orchestrierungMinimalBeispiel.vcxproj -> D:\Arbeit\MSVisualStudio_Workspace\orchestrierungMinimalBeispiel\x64\Release\orchestrierungMinimalBeispiel.exe

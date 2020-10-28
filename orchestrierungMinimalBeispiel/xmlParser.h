@@ -6,21 +6,19 @@
 
 #include <string>
 
-using namespace xercesc_3_2;
-
 class xmlParser
 {
 
 private:
 
-	DOMElement* rootElement;
+	xercesc_3_2::DOMElement* rootElement;
 	std::string url;
 	std::string inputOpcUaNodeName;
 	std::string inputValue;
 
-	DOMElement* getElementByNameFromRoot(std::string elementName);
-	DOMElement* getChildElementByName(DOMElement* element, std::string elementName);
-	std::string getAttributeAndConvertToString(DOMElement* element, std::string attributeName);
+	xercesc_3_2::DOMElement* getElementByNameFromRoot(std::string elementName);
+	xercesc_3_2::DOMElement* getChildElementByName(xercesc_3_2::DOMElement* element, std::string elementName);
+	std::string getAttributeAndConvertToString(xercesc_3_2::DOMElement* element, std::string attributeName);
 
 public:	
 
