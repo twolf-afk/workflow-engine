@@ -29,7 +29,7 @@ bool OpcUAClient::createAndConnectClient(std::string url)
     }
 }
 
-UA_StatusCode OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
+void OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 {
     UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, nodeID, &variant);
 
@@ -38,6 +38,24 @@ UA_StatusCode OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
         throw OpcUAException(statusCode);
     }
 
+}
+
+std::string OpcUAClient::readValue(UA_NodeId nodeID, UA_Variant variant)
+{
+    UA_StatusCode statusCode = UA_Client_readValueAttribute(client, nodeID, &variant);
+
+    if (statusCode != UA_STATUSCODE_GOOD)
+    {
+        throw OpcUAException(statusCode);
+    }
+    else
+    {
+        UA_Boolean uaResult = *(UA_Boolean*) variant.data;
+
+        std::string result = util::boolToString(uaResult);
+
+        return result;
+    }
 }
 
 void OpcUAClient::writeService(std::string value, std::string identifier)
@@ -55,13 +73,40 @@ void OpcUAClient::writeService(std::string value, std::string identifier)
         UA_Variant variant;
         UA_Variant_setScalar(&variant, &value, &UA_TYPES[UA_TYPES_BOOLEAN]);
 
-        UA_StatusCode statusCode = writeValue(nodeID, variant);
+        writeValue(nodeID, variant);
         
     }
     catch (OpcUAException& error)
     {
         logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
     }
+}
+
+std::string OpcUAClient::readService(std::string identifier)
+{
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Read node: ns=2;s=" + identifier);
+    try
+    {
+        // TODO der identifier der nodeID kann auch bytestring, guid o.ä. sein -> auslagern in eigene Methoden
+    // TODO namespaceIndex variable gestalten
+        char* chIdentifier = util::stringToChar(identifier);
+        const UA_NodeId nodeID = UA_NODEID_STRING(2, chIdentifier);
+
+        UA_Variant variant; /* Variants can hold scalar values and arrays of any type */
+        UA_Variant_init(&variant);
+
+        std::string value = readValue(nodeID, variant);
+
+        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Value is: " + value);
+
+        return value;
+    }
+    catch (OpcUAException& error)
+    {
+        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
+        return "error";
+    }
+    
 }
 
 void OpcUAClient::cleanClient()

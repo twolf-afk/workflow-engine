@@ -44,7 +44,7 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
            <element name="Status">
               <complexType>
                   <all>
-                      <element name="status" type="boolean"/>
+                      <element name="19376.local" type="boolean" value=""/>
                   </all>
               </complexType>
            </element>

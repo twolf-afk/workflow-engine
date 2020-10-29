@@ -14,14 +14,17 @@ private:
 
 	UA_Client* client;
 
-	UA_StatusCode writeValue(UA_NodeId nodeID, UA_Variant variant);
+	void writeValue(UA_NodeId nodeID, UA_Variant variant);
+	std::string readValue(UA_NodeId nodeID, UA_Variant variant);
 
 public:
 
 
 	bool createAndConnectClient(std::string url);
 
-	void writeService(std::string value, std::string nodeID);
+	void writeService(std::string value, std::string identifier);
+
+	std::string readService(std::string identifier);
 
 	void cleanClient();
 

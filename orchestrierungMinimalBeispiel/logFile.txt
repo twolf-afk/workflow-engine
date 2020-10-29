@@ -2375,3 +2375,92 @@
 [2020-10-28.14:57:02][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
 [2020-10-28.14:57:02][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
 [2020-10-28.14:57:02][DEBUG][class wsdlHandler][Line: 55] Writing done
+[2020-10-29.12:02:31][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:02:31][DEBUG][class xmlParser][Line: 94] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:02:31][DEBUG][class xmlParser][Line: 42] odeList Length: 
+[2020-10-29.12:02:31][DEBUG][class xmlParser][Line: 109] OPC UA input node: 19376.local
+[2020-10-29.12:02:31][DEBUG][class xmlParser][Line: 110] Input value: false
+[2020-10-29.12:02:31][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:02:31][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.12:02:31][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:03:49][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:03:49][DEBUG][class xmlParser][Line: 31] NodeList Length: 1
+[2020-10-29.12:03:49][DEBUG][class xmlParser][Line: 95] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:03:49][DEBUG][class xmlParser][Line: 31] NodeList Length: 2
+[2020-10-29.12:03:49][DEBUG][class xmlParser][Line: 110] OPC UA input node: 19376.local
+[2020-10-29.12:03:49][DEBUG][class xmlParser][Line: 111] Input value: false
+[2020-10-29.12:03:49][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:03:49][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.12:03:49][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:29:53][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:29:53][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:29:53][DEBUG][class xmlParser][Line: 96] OPC UA input node: 19376.local
+[2020-10-29.12:29:53][DEBUG][class xmlParser][Line: 97] Input value: false
+[2020-10-29.12:29:53][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:29:53][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.12:29:54][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:33:18][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:33:19][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:33:19][DEBUG][class xmlParser][Line: 93] OPC UA input node: 19376.local
+[2020-10-29.12:33:19][DEBUG][class xmlParser][Line: 94] Input value: false
+[2020-10-29.12:33:19][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:33:19][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.12:33:19][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:34:13][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:34:14][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:34:14][DEBUG][class xmlParser][Line: 93] OPC UA input node: Switch
+[2020-10-29.12:34:14][DEBUG][class xmlParser][Line: 94] Input value: 
+[2020-10-29.12:34:14][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:34:14][DEBUG][class OpcUAClient][Line: 45] Writing value:  to node: ns=2;s=Switch
+[2020-10-29.12:34:14][DEBUG][class OpcUAClient][Line: 63] Error code: BadNodeIdUnknown
+[2020-10-29.12:34:14][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:34:43][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:34:43][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:34:43][DEBUG][class xmlParser][Line: 93] OPC UA input node: Switch
+[2020-10-29.12:34:43][DEBUG][class xmlParser][Line: 94] Input value: 
+[2020-10-29.12:34:43][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:34:43][DEBUG][class OpcUAClient][Line: 45] Writing value:  to node: ns=2;s=Switch
+[2020-10-29.12:34:43][DEBUG][class OpcUAClient][Line: 63] Error code: BadNodeIdUnknown
+[2020-10-29.12:34:43][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:35:25][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:35:25][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:35:25][DEBUG][class xmlParser][Line: 93] OPC UA input node: 19376.local
+[2020-10-29.12:35:25][DEBUG][class xmlParser][Line: 94] Input value: false
+[2020-10-29.12:35:25][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:35:25][DEBUG][class OpcUAClient][Line: 45] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.12:35:25][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.12:35:53][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.12:35:53][DEBUG][class xmlParser][Line: 81] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.12:35:53][DEBUG][class xmlParser][Line: 93] OPC UA input node: Switch
+[2020-10-29.12:35:53][DEBUG][class xmlParser][Line: 94] Input value: 
+[2020-10-29.12:35:53][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.12:35:53][DEBUG][class OpcUAClient][Line: 45] Writing value:  to node: ns=2;s=Switch
+[2020-10-29.12:35:53][DEBUG][class OpcUAClient][Line: 63] Error code: BadNodeIdUnknown
+[2020-10-29.12:35:53][DEBUG][class Engine][Line: 40] Execution of service: testService.wsdl done
+[2020-10-29.14:24:53][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.14:24:53][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.14:24:53][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.14:24:53][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.14:24:53][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.14:24:53][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.14:24:53][DEBUG][class Engine][Line: 41] Execution of service: testService.wsdl done
+[2020-10-29.14:41:04][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.14:41:04][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.14:41:04][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.14:41:04][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.14:41:04][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.14:41:04][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.14:41:04][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=
+[2020-10-29.14:41:04][DEBUG][class OpcUAClient][Line: 106] Error code: BadNodeIdUnknown
+[2020-10-29.14:41:04][DEBUG][class Engine][Line: 44] Execution of service: testService.wsdl done
+[2020-10-29.14:42:11][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.14:42:11][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.14:42:11][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.14:42:11][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.14:42:12][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.14:42:12][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.14:42:12][DEBUG][class Engine][Line: 45] Execution of service: testService.wsdl done

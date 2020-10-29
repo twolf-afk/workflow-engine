@@ -21,25 +21,29 @@ std::string xmlParser::getInputValue()
     return inputValue;
 }
 
-// TODO es wird immer das erste Element zurueck gegeben -> variable gestalten
-xercesc_3_2::DOMElement* xmlParser::getElementByNameFromRoot(std::string elementName)
+std::string xmlParser::getOutputOpcUaNodeName()
 {
-
-    XMLCh* tageName = xercesc_3_2::XMLString::transcode(elementName.c_str());
-    xercesc_3_2::DOMNodeList* nodes = rootElement->getElementsByTagName(tageName);
-    xercesc_3_2::DOMNode* node = nodes->item(0);
-    xercesc_3_2::DOMElement* element = dynamic_cast<xercesc::DOMElement*>(node);
-
-    return element;
+    return outputOpcUaNodeName;
 }
 
-// TODO es wird immer das erste Element zurueck gegeben -> variable gestalten
-xercesc_3_2::DOMElement* xmlParser::getChildElementByName(xercesc_3_2::DOMElement* element, std::string elementName)
+std::string xmlParser::getOutputValue()
+{
+    return outputValue;
+}
+
+void xmlParser::setOutputValue(std::string value)
+{
+    outputValue = value;
+}
+
+// TODO index gibt das element an, welches aus der Liste ausgewaehlt wird
+// kann zu problemen fuehren, wenn sich die Reihenfolge in der xml aendert
+xercesc_3_2::DOMElement* xmlParser::getElementByNameAndIndexFromElement(std::string elementTagName, int index, xercesc_3_2::DOMElement* element)
 {
 
-    XMLCh* tageName = xercesc_3_2::XMLString::transcode(elementName.c_str());
+    XMLCh* tageName = xercesc_3_2::XMLString::transcode(elementTagName.c_str());
     xercesc_3_2::DOMNodeList* nodes = element->getElementsByTagName(tageName);
-    xercesc_3_2::DOMNode* node = nodes->item(0);
+    xercesc_3_2::DOMNode* node = nodes->item(index);
     xercesc_3_2::DOMElement* childElement = dynamic_cast<xercesc::DOMElement*>(node);
 
     return childElement;
@@ -86,7 +90,7 @@ void xmlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 void xmlParser::getUrlFromDocument()
 {
 
-    xercesc_3_2::DOMElement* soapElement = getElementByNameFromRoot("soap:address");
+    xercesc_3_2::DOMElement* soapElement = getElementByNameAndIndexFromElement("soap:address", 0, rootElement);
 
     url = getAttributeAndConvertToString(soapElement, "location");
 
@@ -96,14 +100,21 @@ void xmlParser::getUrlFromDocument()
 
 void xmlParser::getInput()
 {
-
-    xercesc_3_2::DOMElement* all = getElementByNameFromRoot("all");
-    xercesc_3_2::DOMElement* inputElement = getChildElementByName(all, "element");
+    xercesc_3_2::DOMElement* inputElement = getElementByNameAndIndexFromElement("element", 1, rootElement);
 
     inputOpcUaNodeName = getAttributeAndConvertToString(inputElement, "name");
     inputValue = getAttributeAndConvertToString(inputElement, "value");
 
     logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "OPC UA input node: " + inputOpcUaNodeName);
     logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "Input value: " + inputValue);
+}
 
+void xmlParser::getOutput()
+{
+    xercesc_3_2::DOMElement* outputElement = getElementByNameAndIndexFromElement("element", 3, rootElement);
+
+    outputOpcUaNodeName = getAttributeAndConvertToString(outputElement, "name");
+
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "OPC UA input node: " + inputOpcUaNodeName);
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "Input value: " + inputValue);
 }

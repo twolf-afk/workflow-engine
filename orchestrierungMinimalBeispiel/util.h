@@ -16,6 +16,8 @@ public:
 
 	static std::string stringToUpperCaseString(std::string string);
 
+	static std::string boolToString(bool value);
+
 	static char* stringToChar(std::string);
 
 };
