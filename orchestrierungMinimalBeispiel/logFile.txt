@@ -2464,3 +2464,969 @@
 [2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
 [2020-10-29.14:42:12][DEBUG][class OpcUAClient][Line: 100] Value is: true
 [2020-10-29.14:42:12][DEBUG][class Engine][Line: 45] Execution of service: testService.wsdl done
+[2020-10-29.16:07:02][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:07:02][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:07:02][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:07:02][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:07:03][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:07:03][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:07:03][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:07:03][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:07:03][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:07:03][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:07:03][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:07:30][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:07:30][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:07:30][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:07:30][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:07:31][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:07:31][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:07:31][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:07:31][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:07:31][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:07:31][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:07:31][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:07:51][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:07:51][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:07:51][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:07:51][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:07:52][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:07:52][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:07:52][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:07:52][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:07:52][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:07:52][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:07:52][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:08:45][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:08:45][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:08:45][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:08:45][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:08:46][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:08:46][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:08:46][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:08:46][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:08:46][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:08:46][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:08:46][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:09:03][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:09:03][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:09:03][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:09:03][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:09:03][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:09:03][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:09:03][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:09:03][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:09:03][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:09:03][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:09:03][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:09:20][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:09:20][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:09:20][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:09:20][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:09:20][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:09:20][DEBUG][class OpcUAClient][Line: 63] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:09:20][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:09:20][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:09:20][DEBUG][class OpcUAClient][Line: 87] Read node: ns=2;s=19376.local
+[2020-10-29.16:09:20][DEBUG][class OpcUAClient][Line: 100] Value is: true
+[2020-10-29.16:09:20][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:11:14][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:11:14][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:11:14][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:11:14][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:11:15][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:11:15][DEBUG][class OpcUAClient][Line: 67] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:11:15][DEBUG][class OpcUAClient][Line: 38] Code: Good
+[2020-10-29.16:11:15][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:11:15][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:11:15][DEBUG][class OpcUAClient][Line: 91] Read node: ns=2;s=19376.local
+[2020-10-29.16:11:15][DEBUG][class OpcUAClient][Line: 104] Value is: true
+[2020-10-29.16:11:15][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:22:12][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:22:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:22:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:22:12][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 69] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 36] Code: 
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 87] Error code: BadTypeMismatch
+[2020-10-29.16:22:12][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:22:12][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:22:12][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:22:12][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:22:20][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:22:21][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:22:21][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:22:21][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 69] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 36] Code: 
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 87] Error code: BadTypeMismatch
+[2020-10-29.16:22:21][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:22:21][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:22:21][DEBUG][class OpcUAClient][Line: 106] Value is: false
+[2020-10-29.16:22:21][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:22:41][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:22:41][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:22:41][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:22:41][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 69] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 36] Code: 
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 87] Error code: BadTypeMismatch
+[2020-10-29.16:22:41][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:22:41][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:22:41][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:22:42][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:30:02][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:30:02][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:30:02][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:30:02][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:30:02][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:30:02][DEBUG][class OpcUAClient][Line: 69] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:30:02][DEBUG][class OpcUAClient][Line: 36] Code: 
+[2020-10-29.16:30:02][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:30:02][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:30:02][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:30:02][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:30:02][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:30:16][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:30:16][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:30:16][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:30:16][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:30:16][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:30:16][DEBUG][class OpcUAClient][Line: 69] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:30:16][DEBUG][class OpcUAClient][Line: 36] Code: 
+[2020-10-29.16:30:16][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:30:16][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:30:16][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:30:16][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:30:16][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:31:40][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:31:40][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:31:40][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:31:40][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:31:40][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:31:40][DEBUG][class OpcUAClient][Line: 68] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:31:40][DEBUG][class OpcUAClient][Line: 35] Code: 
+[2020-10-29.16:31:40][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:31:40][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:31:40][DEBUG][class OpcUAClient][Line: 92] Read node: ns=2;s=19376.local
+[2020-10-29.16:31:40][DEBUG][class OpcUAClient][Line: 105] Value is: true
+[2020-10-29.16:31:40][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:32:22][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:32:22][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:32:22][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:32:22][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 68] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 35] Code: 
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 87] Error code: BadTypeMismatch
+[2020-10-29.16:32:22][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:32:22][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:32:22][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:32:22][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:32:52][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:32:52][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:32:52][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:32:52][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:32:52][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:32:52][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:32:52][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:32:52][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:32:52][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:32:52][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.16:35:34][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:35:34][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:35:34][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:35:34][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:35:34][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:35:34][DEBUG][class OpcUAClient][Line: 68] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:35:34][DEBUG][class OpcUAClient][Line: 35] Code: 
+[2020-10-29.16:35:34][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.16:35:34][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.16:35:34][DEBUG][class OpcUAClient][Line: 93] Read node: ns=2;s=19376.local
+[2020-10-29.16:35:34][DEBUG][class OpcUAClient][Line: 106] Value is: true
+[2020-10-29.16:35:34][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.16:39:44][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.16:39:44][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.16:39:44][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.16:39:44][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.16:39:44][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.16:39:44][DEBUG][class OpcUAClient][Line: 68] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.16:39:44][DEBUG][class OpcUAClient][Line: 35] Code: 
+[2020-10-29.18:35:20][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:35:20][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:35:20][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:35:20][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 50] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 35] Code: 
+[2020-10-29.18:35:20][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:35:20][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 105] Read node: ns=2;s=19376.local
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 88] true
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 92] true
+[2020-10-29.18:35:20][DEBUG][class OpcUAClient][Line: 118] Value is: true
+[2020-10-29.18:35:20][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.18:36:28][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:36:28][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:36:28][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:36:28][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:36:28][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:36:28][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:36:28][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:36:28][DEBUG][class Engine][Line: 36] Execution of service: testService.wsdl done
+[2020-10-29.18:37:05][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:37:05][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:37:05][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:37:05][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:37:05][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:37:05][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:37:05][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:37:05][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:37:06][DEBUG][class OpcUAClient][Line: 116] Value is: false
+[2020-10-29.18:37:06][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:37:20][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:37:20][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:37:20][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:37:20][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:37:20][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:37:20][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:37:20][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:37:20][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:37:20][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:37:20][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:37:20][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:37:20][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:37:27][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:37:27][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:37:27][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:37:27][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:37:27][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:37:27][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:37:27][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:37:27][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:37:28][DEBUG][class OpcUAClient][Line: 116] Value is: false
+[2020-10-29.18:37:28][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:37:54][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:37:54][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:37:54][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:37:54][DEBUG][class xmlParser][Line: 109] Input value: true
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 48] Writing value: true to node: ns=2;s=19376.local
+[2020-10-29.18:37:55][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:37:55][DEBUG][class xmlParser][Line: 119] Input value: true
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:37:55][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:37:55][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:38:11][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:38:11][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:38:11][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:38:11][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:38:11][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:38:11][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:38:11][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:38:12][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:38:12][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:38:12][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:38:12][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:38:12][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:38:12][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:38:30][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:38:30][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:38:30][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:38:30][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:38:30][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:38:30][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:38:30][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:38:30][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:38:37][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:38:37][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:38:37][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:38:37][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:38:37][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:38:37][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:38:37][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:38:37][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:38:54][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:38:54][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.18:38:54][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.local
+[2020-10-29.18:38:54][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=19376.local
+[2020-10-29.18:38:54][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.local
+[2020-10-29.18:38:54][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.local
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 86] true
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 90] true
+[2020-10-29.18:38:54][DEBUG][class OpcUAClient][Line: 116] Value is: true
+[2020-10-29.18:38:54][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:47:38][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:47:39][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.18:47:39][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.18:47:39][DEBUG][class xmlParser][Line: 109] Input value: false
+[2020-10-29.18:47:39][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:47:39][DEBUG][class OpcUAClient][Line: 48] Writing value: false to node: ns=2;s=the answer
+[2020-10-29.18:47:39][DEBUG][class OpcUAClient][Line: 68] Error code: BadNodeIdUnknown
+[2020-10-29.18:47:39][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.18:47:39][DEBUG][class xmlParser][Line: 119] Input value: false
+[2020-10-29.18:47:39][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=the answer
+[2020-10-29.18:47:39][DEBUG][class OpcUAClient][Line: 122] Error code: BadNodeIdUnknown
+[2020-10-29.18:47:39][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:58:18][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:58:18][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.18:58:18][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.18:58:18][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.18:58:18][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:58:18][DEBUG][class OpcUAClient][Line: 48] Writing value: Corona to node: ns=2;s=the answer
+[2020-10-29.18:58:18][DEBUG][class OpcUAClient][Line: 68] Error code: BadInternalError
+[2020-10-29.18:58:18][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:58:56][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:58:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.18:58:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.18:58:56][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.18:58:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:58:56][DEBUG][class OpcUAClient][Line: 48] Writing value: Corona to node: ns=2;s=the answer
+[2020-10-29.18:58:56][DEBUG][class OpcUAClient][Line: 68] Error code: BadInternalError
+[2020-10-29.18:58:56][DEBUG][class Engine][Line: 39] Execution of service: testService.wsdl done
+[2020-10-29.18:59:13][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.18:59:13][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.18:59:13][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.18:59:13][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.18:59:13][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.18:59:13][DEBUG][class OpcUAClient][Line: 48] Writing value: Corona to node: ns=2;s=the answer
+[2020-10-29.19:07:56][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.19:07:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.19:07:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.19:07:56][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.19:07:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.19:07:56][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.19:07:56][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.19:07:56][DEBUG][class OpcUAClient][Line: 97] Read node: ns=2;s=the answer
+[2020-10-29.19:07:56][DEBUG][class OpcUAClient][Line: 110] Value is: hello world
+[2020-10-29.19:07:56][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.19:08:08][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.19:08:08][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.19:08:08][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.19:08:08][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.19:08:08][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.19:08:08][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.19:08:08][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.19:08:08][DEBUG][class OpcUAClient][Line: 97] Read node: ns=2;s=the answer
+[2020-10-29.19:08:08][DEBUG][class OpcUAClient][Line: 110] Value is: corona
+[2020-10-29.19:08:08][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:22:54][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:22:54][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:22:54][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:22:54][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:22:54][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:22:54][DEBUG][class OpcUAClient][Line: 46] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:22:54][DEBUG][class OpcUAClient][Line: 66] Error code: BadInternalError
+[2020-10-29.20:22:54][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:22:54][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:22:54][DEBUG][class OpcUAClient][Line: 97] Read node: ns=2;s=the answer
+[2020-10-29.20:22:54][DEBUG][class OpcUAClient][Line: 110] Value is: corona
+[2020-10-29.20:22:54][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:23:11][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:23:11][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:23:11][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:23:11][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:23:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:23:12][DEBUG][class OpcUAClient][Line: 46] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:23:12][DEBUG][class OpcUAClient][Line: 66] Error code: BadInternalError
+[2020-10-29.20:23:12][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:23:12][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:23:12][DEBUG][class OpcUAClient][Line: 97] Read node: ns=2;s=the answer
+[2020-10-29.20:23:12][DEBUG][class OpcUAClient][Line: 110] Value is: andi
+[2020-10-29.20:23:12][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:25:14][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:25:14][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:25:14][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:25:14][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:25:14][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:25:14][DEBUG][class OpcUAClient][Line: 46] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:25:14][DEBUG][class OpcUAClient][Line: 65] Error code: BadInternalError
+[2020-10-29.20:25:14][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:25:14][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:25:14][DEBUG][class OpcUAClient][Line: 96] Read node: ns=2;s=the answer
+[2020-10-29.20:25:14][DEBUG][class OpcUAClient][Line: 109] Value is: andi
+[2020-10-29.20:25:14][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:25:31][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:25:31][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:25:31][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:25:31][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:25:31][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:25:31][DEBUG][class OpcUAClient][Line: 46] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:25:31][DEBUG][class OpcUAClient][Line: 65] Error code: BadInternalError
+[2020-10-29.20:25:31][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:25:31][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:25:31][DEBUG][class OpcUAClient][Line: 96] Read node: ns=2;s=the answer
+[2020-10-29.20:25:31][DEBUG][class OpcUAClient][Line: 109] Value is: andi
+[2020-10-29.20:25:31][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:26:49][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:26:49][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:26:49][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:26:49][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 70] Error code: BadInternalError
+[2020-10-29.20:26:49][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:26:49][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 101] Read node: ns=2;s=the answer
+[2020-10-29.20:26:49][DEBUG][class OpcUAClient][Line: 114] Value is: andi
+[2020-10-29.20:26:49][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:27:37][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:27:37][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:27:37][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:27:37][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 39] Writing value: BadTypeMismatch
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 70] Error code: BadTypeMismatch
+[2020-10-29.20:27:38][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:27:38][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 101] Read node: ns=2;s=the answer
+[2020-10-29.20:27:38][DEBUG][class OpcUAClient][Line: 114] Value is: andi
+[2020-10-29.20:27:38][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:27:56][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:27:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:27:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:27:56][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 70] Error code: BadInternalError
+[2020-10-29.20:27:56][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:27:56][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 101] Read node: ns=2;s=the answer
+[2020-10-29.20:27:56][DEBUG][class OpcUAClient][Line: 114] Value is: andi
+[2020-10-29.20:27:56][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.20:43:15][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.20:43:15][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.20:43:15][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.20:43:15][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 71] Error code: BadInternalError
+[2020-10-29.20:43:15][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.20:43:15][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 102] Read node: ns=2;s=the answer
+[2020-10-29.20:43:15][DEBUG][class OpcUAClient][Line: 115] Value is: andi
+[2020-10-29.20:43:15][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:03:15][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:03:15][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.21:03:15][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:03:15][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 79] Error code: BadInternalError
+[2020-10-29.21:03:15][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.21:03:15][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 110] Read node: ns=2;s=the answer
+[2020-10-29.21:03:15][DEBUG][class OpcUAClient][Line: 123] Value is: andi
+[2020-10-29.21:03:15][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:08:02][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:08:02][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.21:08:02][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:08:02][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:08:02][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:08:02][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:08:56][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:08:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.21:08:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:08:56][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:08:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:08:56][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:28:04][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:28:04][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:28:04][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.21:28:04][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=19376.description
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 71] Error code: BadInternalError
+[2020-10-29.21:28:04][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.21:28:04][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 102] Read node: ns=2;s=19376.description
+[2020-10-29.21:28:04][DEBUG][class OpcUAClient][Line: 115] Value is: hey
+[2020-10-29.21:28:04][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:38:32][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:38:32][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:38:32][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.21:38:32][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=19376.description
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.21:38:33][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.21:38:33][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 105] Read node: ns=2;s=19376.description
+[2020-10-29.21:38:33][DEBUG][class OpcUAClient][Line: 118] Value is: hey
+[2020-10-29.21:38:33][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:39:52][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:39:52][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:39:52][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:39:52][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:39:52][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:39:52][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:39:52][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:39:52][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.21:39:52][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.21:39:52][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:39:52][DEBUG][class OpcUAClient][Line: 105] Read node: ns=2;s=the answer
+[2020-10-29.21:39:53][DEBUG][class OpcUAClient][Line: 124] Error code: BadNodeIdUnknown
+[2020-10-29.21:39:53][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:41:08][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:41:08][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:41:08][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:41:08][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.21:41:08][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.21:41:08][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 105] Read node: ns=2;s=the answer
+[2020-10-29.21:41:08][DEBUG][class OpcUAClient][Line: 124] Error code: BadNodeIdUnknown
+[2020-10-29.21:41:08][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:41:28][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:41:28][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:41:28][DEBUG][class xmlParser][Line: 108] OPC UA input node: the answer
+[2020-10-29.21:41:28][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=the answer
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.21:41:29][DEBUG][class xmlParser][Line: 118] OPC UA input node: the answer
+[2020-10-29.21:41:29][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 105] Read node: ns=1;s=the answer
+[2020-10-29.21:41:29][DEBUG][class OpcUAClient][Line: 124] Error code: BadNodeIdUnknown
+[2020-10-29.21:41:29][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.21:42:48][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.21:42:48][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.21:42:48][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.21:42:48][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.21:42:48][DEBUG][class xmlParser][Line: 118] OPC UA input node: theanswer
+[2020-10-29.21:42:48][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 105] Read node: ns=1;s=theanswer
+[2020-10-29.21:42:48][DEBUG][class OpcUAClient][Line: 124] Error code: BadNodeIdUnknown
+[2020-10-29.21:42:48][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:11:44][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:11:44][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:11:44][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:11:44][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:11:44][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:11:46][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:11:46][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.22:11:46][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.22:11:46][DEBUG][class xmlParser][Line: 118] OPC UA input node: theanswer
+[2020-10-29.22:11:46][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:11:46][DEBUG][class OpcUAClient][Line: 105] Read node: ns=1;s=theanswer
+[2020-10-29.22:11:46][DEBUG][class OpcUAClient][Line: 124] Error code: BadNodeIdUnknown
+[2020-10-29.22:11:46][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:13:04][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:13:05][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:13:05][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:13:05][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:13:05][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:13:06][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:13:06][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.22:13:06][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.22:13:06][DEBUG][class xmlParser][Line: 118] OPC UA input node: theanswer
+[2020-10-29.22:13:06][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:13:06][DEBUG][class OpcUAClient][Line: 105] Read node: ns=1;s=theanswer
+[2020-10-29.22:13:06][DEBUG][class OpcUAClient][Line: 118] Value is: test
+[2020-10-29.22:13:06][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:13:27][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:13:27][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:13:27][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:13:27][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:13:27][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:13:28][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:13:28][DEBUG][class OpcUAClient][Line: 39] Writing value: BadInternalError
+[2020-10-29.22:13:28][DEBUG][class OpcUAClient][Line: 74] Error code: BadInternalError
+[2020-10-29.22:13:28][DEBUG][class xmlParser][Line: 118] OPC UA input node: theanswer
+[2020-10-29.22:13:28][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:13:28][DEBUG][class OpcUAClient][Line: 105] Read node: ns=1;s=theanswer
+[2020-10-29.22:13:28][DEBUG][class OpcUAClient][Line: 118] Value is: corona
+[2020-10-29.22:13:28][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:14:05][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:14:05][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:14:05][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:14:05][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:14:05][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:14:23][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:18:10][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:18:10][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:18:10][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:18:10][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:18:10][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:18:13][DEBUG][class OpcUAClient][Line: 51] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:24:46][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:24:46][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:24:46][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:24:46][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:24:46][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:24:46][DEBUG][class OpcUAClient][Line: 61] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:25:00][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:25:01][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:25:01][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:25:01][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:25:01][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:25:01][DEBUG][class OpcUAClient][Line: 61] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:25:12][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:25:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:25:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:25:12][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:25:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:25:12][DEBUG][class OpcUAClient][Line: 61] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:27:32][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:27:32][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:27:32][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.22:27:32][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 69] true
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 77] Error code: BadInternalError
+[2020-10-29.22:27:32][DEBUG][class xmlParser][Line: 118] OPC UA input node: theanswer
+[2020-10-29.22:27:32][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 108] Read node: ns=1;s=theanswer
+[2020-10-29.22:27:32][DEBUG][class OpcUAClient][Line: 121] Value is: test
+[2020-10-29.22:27:32][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:29:24][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:29:24][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:29:24][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:29:24][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=1;s=19376.description
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 72] Error code: BadInternalError
+[2020-10-29.22:29:24][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:29:24][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.description
+[2020-10-29.22:29:24][DEBUG][class OpcUAClient][Line: 122] Error code: BadNodeIdUnknown
+[2020-10-29.22:29:24][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:29:53][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:29:53][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:29:53][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:29:53][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=1;s=19376.description
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 72] Error code: BadInternalError
+[2020-10-29.22:29:53][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:29:53][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 103] Read node: ns=1;s=19376.description
+[2020-10-29.22:29:53][DEBUG][class OpcUAClient][Line: 122] Error code: BadNodeIdUnknown
+[2020-10-29.22:29:54][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:30:20][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:30:20][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.22:30:20][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:30:20][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:30:20][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:30:20][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:30:20][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:30:20][DEBUG][class OpcUAClient][Line: 72] Error code: BadInternalError
+[2020-10-29.22:30:21][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:30:21][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:30:21][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.description
+[2020-10-29.22:30:21][DEBUG][class OpcUAClient][Line: 122] Error code: BadNodeIdUnknown
+[2020-10-29.22:30:21][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:30:54][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:30:54][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:30:54][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:30:54][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 72] Error code: BadInternalError
+[2020-10-29.22:30:55][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:30:55][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 103] Read node: ns=2;s=19376.description
+[2020-10-29.22:30:55][DEBUG][class OpcUAClient][Line: 116] Value is: hey
+[2020-10-29.22:30:55][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:43:50][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:43:50][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:43:50][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:43:50][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:43:51][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:43:51][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:43:51][DEBUG][class OpcUAClient][Line: 63] Statuscode: BadNodeIdUnknown
+[2020-10-29.22:44:29][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:44:29][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:44:29][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:44:29][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:44:29][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:44:29][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:44:29][DEBUG][class OpcUAClient][Line: 63] Statuscode: Good
+[2020-10-29.22:45:17][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:45:17][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:45:17][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:45:17][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 63] Statuscode: Good
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 83] Error code: BadInternalError
+[2020-10-29.22:45:18][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:45:18][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 114] Read node: ns=2;s=19376.description
+[2020-10-29.22:45:18][DEBUG][class OpcUAClient][Line: 127] Value is: Corona
+[2020-10-29.22:45:18][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:45:44][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:45:44][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:45:44][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:45:44][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:45:44][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:45:44][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:45:45][DEBUG][class OpcUAClient][Line: 63] Statuscode: Good
+[2020-10-29.22:45:45][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:45:45][DEBUG][class OpcUAClient][Line: 83] Error code: BadInternalError
+[2020-10-29.22:45:45][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:45:45][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:45:45][DEBUG][class OpcUAClient][Line: 114] Read node: ns=2;s=19376.description
+[2020-10-29.22:45:45][DEBUG][class OpcUAClient][Line: 127] Value is: XXXXXXXXXXXXXXXXXX
+[2020-10-29.22:45:45][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:46:21][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:46:21][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:46:21][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:46:21][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:46:21][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:46:21][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:46:21][DEBUG][class OpcUAClient][Line: 63] Statuscode: Good
+[2020-10-29.22:46:21][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:46:21][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:46:21][DEBUG][class OpcUAClient][Line: 114] Read node: ns=2;s=19376.description
+[2020-10-29.22:46:22][DEBUG][class OpcUAClient][Line: 127] Value is: XXXXXXXXXXXXXXXXXX
+[2020-10-29.22:46:22][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:46:47][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:46:47][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:46:47][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:46:47][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:46:48][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:46:48][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:46:48][DEBUG][class OpcUAClient][Line: 63] Statuscode: Good
+[2020-10-29.22:46:48][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:46:48][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:46:48][DEBUG][class OpcUAClient][Line: 114] Read node: ns=2;s=19376.description
+[2020-10-29.22:46:48][DEBUG][class OpcUAClient][Line: 127] Value is: Corona
+[2020-10-29.22:46:48][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:50:26][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:50:26][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:50:26][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:50:26][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:50:26][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:50:26][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:50:27][DEBUG][class OpcUAClient][Line: 66] Statuscode: Good
+[2020-10-29.22:50:27][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:50:27][DEBUG][class OpcUAClient][Line: 85] Error code: BadInternalError
+[2020-10-29.22:50:27][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:50:27][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:50:27][DEBUG][class OpcUAClient][Line: 116] Read node: ns=2;s=19376.description
+[2020-10-29.22:50:27][DEBUG][class OpcUAClient][Line: 129] Value is: Corona
+[2020-10-29.22:50:27][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:51:12][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:51:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:51:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:51:12][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 38] Statuscode: BadInternalError
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 85] Error code: BadInternalError
+[2020-10-29.22:51:12][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:51:12][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 116] Read node: ns=2;s=19376.description
+[2020-10-29.22:51:12][DEBUG][class OpcUAClient][Line: 129] Value is: Corona
+[2020-10-29.22:51:12][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:51:59][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:51:59][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:51:59][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:51:59][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 84] Statuscode: BadInternalError
+[2020-10-29.22:51:59][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:51:59][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 120] Read node: ns=2;s=19376.description
+[2020-10-29.22:51:59][DEBUG][class OpcUAClient][Line: 133] Value is: Corona
+[2020-10-29.22:51:59][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:52:49][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:52:49][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:52:49][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:52:49][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 83] Statuscode: BadInternalError
+[2020-10-29.22:52:50][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:52:50][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 119] Read node: ns=2;s=19376.description
+[2020-10-29.22:52:50][DEBUG][class OpcUAClient][Line: 132] Value is: Corona
+[2020-10-29.22:52:50][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:53:15][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:53:15][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:53:15][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:53:15][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 83] Statuscode: BadInternalError
+[2020-10-29.22:53:16][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:53:16][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 119] Read node: ns=2;s=19376.description
+[2020-10-29.22:53:16][DEBUG][class OpcUAClient][Line: 132] Value is: Corona
+[2020-10-29.22:53:16][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:53:38][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:53:38][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:53:38][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:53:38][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 83] Statuscode 2: BadInternalError
+[2020-10-29.22:53:38][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:53:38][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 119] Read node: ns=2;s=19376.description
+[2020-10-29.22:53:38][DEBUG][class OpcUAClient][Line: 132] Value is: Corona
+[2020-10-29.22:53:38][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:54:32][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:54:32][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:54:32][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:54:32][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:54:32][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:54:32][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:54:33][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:54:33][DEBUG][class OpcUAClient][Line: 83] Statuscode 2: Good
+[2020-10-29.22:54:33][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:54:33][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:54:33][DEBUG][class OpcUAClient][Line: 119] Read node: ns=2;s=19376.description
+[2020-10-29.22:54:33][DEBUG][class OpcUAClient][Line: 132] Value is: Corona
+[2020-10-29.22:54:33][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:56:12][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:56:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:56:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:56:12][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.22:56:13][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:56:13][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 117] Read node: ns=2;s=19376.description
+[2020-10-29.22:56:13][DEBUG][class OpcUAClient][Line: 130] Value is: Corona
+[2020-10-29.22:56:13][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:56:50][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:56:50][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:56:50][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:56:50][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:56:50][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:56:50][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:56:50][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:56:50][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.22:56:50][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:56:50][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:56:50][DEBUG][class OpcUAClient][Line: 117] Read node: ns=2;s=19376.description
+[2020-10-29.22:56:51][DEBUG][class OpcUAClient][Line: 130] Value is: Corona
+[2020-10-29.22:56:51][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:57:21][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:57:21][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:57:21][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:57:21][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 66] Statuscode erstens: Good
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.22:57:22][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:57:22][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 113] Read node: ns=2;s=19376.description
+[2020-10-29.22:57:22][DEBUG][class OpcUAClient][Line: 126] Value is: Corona
+[2020-10-29.22:57:22][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:57:47][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:57:47][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:57:47][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:57:47][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:57:48][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:57:48][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:57:48][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.22:57:48][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:57:48][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:57:48][DEBUG][class OpcUAClient][Line: 99] Read node: ns=2;s=19376.description
+[2020-10-29.22:57:48][DEBUG][class OpcUAClient][Line: 112] Value is: Corona
+[2020-10-29.22:57:48][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.22:58:42][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.22:58:42][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.22:58:42][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.22:58:42][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.22:58:42][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.22:58:42][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.22:58:42][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.22:58:42][DEBUG][class xmlParser][Line: 118] OPC UA input node: 19376.description
+[2020-10-29.22:58:42][DEBUG][class xmlParser][Line: 119] Input value: Corona
+[2020-10-29.22:58:42][DEBUG][class OpcUAClient][Line: 99] Read node: ns=2;s=19376.description
+[2020-10-29.22:58:42][DEBUG][class OpcUAClient][Line: 112] Value is: Corona
+[2020-10-29.22:58:42][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.23:01:01][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.23:01:01][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://141.58.122.40:4841
+[2020-10-29.23:01:01][DEBUG][class xmlParser][Line: 108] OPC UA input node: 19376.description
+[2020-10-29.23:01:01][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.23:01:01][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.23:01:01][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=2;s=19376.description
+[2020-10-29.23:01:01][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.23:01:01][DEBUG][class xmlParser][Line: 118] OPC UA output node: 19376.description
+[2020-10-29.23:01:01][DEBUG][class OpcUAClient][Line: 99] Read node: ns=2;s=19376.description
+[2020-10-29.23:01:01][DEBUG][class OpcUAClient][Line: 112] Value is: Corona
+[2020-10-29.23:01:01][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.23:02:56][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.23:02:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.23:02:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.23:02:56][DEBUG][class xmlParser][Line: 109] Input value: Corona
+[2020-10-29.23:02:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.23:02:56][DEBUG][class OpcUAClient][Line: 50] Writing value: Corona to node: ns=1;s=theanswer
+[2020-10-29.23:02:56][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.23:02:56][DEBUG][class xmlParser][Line: 118] OPC UA output node: theanswer
+[2020-10-29.23:02:56][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-10-29.23:02:56][DEBUG][class OpcUAClient][Line: 112] Value is: Corona
+[2020-10-29.23:02:56][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-10-29.23:03:11][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-10-29.23:03:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-10-29.23:03:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-10-29.23:03:12][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-10-29.23:03:12][DEBUG][class xmlParser][Line: 118] OPC UA output node: theanswer
+[2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-10-29.23:03:12][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done

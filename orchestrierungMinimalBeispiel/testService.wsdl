@@ -13,7 +13,7 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
 	<service name="turnLightOnAndOff">
         <documentation>This Service turns the light at the switch on and of</documentation>
         <port name="HWD_Light" binding="tns:LightTrigger">
-           <soap:address location="opc.tcp://141.58.122.40:4841"/>
+           <soap:address location="opc.tcp://DESKTOP-0AULV4D:4840/"/>
         </port>
     </service>
 
@@ -37,14 +37,14 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
            <element name="Switch">
               <complexType>
                   <all>
-                      <element name="19376.local" type="boolean" value="false"/>
+                      <element name="theanswer" type="string" value="andi"/>
                   </all>
               </complexType>
            </element>
            <element name="Status">
               <complexType>
                   <all>
-                      <element name="19376.local" type="boolean" value=""/>
+                      <element name="theanswer" type="string" value=""/>
                   </all>
               </complexType>
            </element>

@@ -20,24 +20,17 @@ void Engine::executeService(std::string fileName)
 	OpcUAClient client;
 	client.createAndConnectClient(url);
 
+
 	std::string inputNode = xml.getInputOpcUaNodeName();
 	std::string valueToWrite = xml.getInputValue();
 	client.writeService(valueToWrite, inputNode);
 	
+
 	xml.getOutput();
 	std::string outputNode = xml.getOutputOpcUaNodeName();
 	
 	std::string result = client.readService(outputNode);
 	
-
-
-	// durchsuche file nach porttype
-		// suche dort nach output
-
-	// suche nach message mit namen aus output 
-
-	// suche danach in types, schema, das element mit namen aus message
-
 	// nimm dann dort den namen (NodeID) und lese den Wert so lange bis dieser einen fertigen Prozess anzeigt
 
 	client.cleanClient();

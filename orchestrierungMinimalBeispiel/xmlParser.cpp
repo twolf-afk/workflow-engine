@@ -115,6 +115,5 @@ void xmlParser::getOutput()
 
     outputOpcUaNodeName = getAttributeAndConvertToString(outputElement, "name");
 
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "OPC UA input node: " + inputOpcUaNodeName);
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "Input value: " + inputValue);
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(xmlParser).name(), __LINE__, "OPC UA output node: " + outputOpcUaNodeName);
 }
