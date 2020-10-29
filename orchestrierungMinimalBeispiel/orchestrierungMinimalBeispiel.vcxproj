@@ -149,7 +149,7 @@
     <ClCompile Include="OpcUAException.cpp" />
     <ClCompile Include="orchestrierungMinimalBeispiel.cpp" />
     <ClCompile Include="util.cpp" />
-    <ClCompile Include="wsdlHandler.cpp" />
+    <ClCompile Include="engine.cpp" />
     <ClCompile Include="xmlCreator.cpp" />
     <ClCompile Include="xmlParser.cpp" />
   </ItemGroup>
@@ -160,7 +160,7 @@
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="orchestrierungMinimalBeispiel.h" />
     <ClInclude Include="util.h" />
-    <ClInclude Include="wsdlHandler.h" />
+    <ClInclude Include="engine.h" />
     <ClInclude Include="xmlCreator.h" />
     <ClInclude Include="xmlParser.h" />
   </ItemGroup>

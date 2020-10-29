@@ -29,11 +29,16 @@ bool OpcUAClient::createAndConnectClient(std::string url)
     }
 }
 
-UA_StatusCode OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
+void OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 {
     UA_StatusCode statusCode = UA_Client_writeValueAttribute(client, nodeID, &variant);
 
-    if (statusCode != UA_STATUSCODE_GOOD)
+    std::string readableStatuscode = UA_StatusCode_name(statusCode);
+
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Statuscode: " + readableStatuscode);
+    
+    // TODO am besten immer den statuscode in den logger schmeissen -> bringt mehr infos
+    if (UA_StatusCode_isBad(statusCode))
     {
         throw OpcUAException(statusCode);
     }
@@ -42,26 +47,78 @@ UA_StatusCode OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 
 void OpcUAClient::writeService(std::string value, std::string identifier)
 {
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Writing value: " + value + " to node: ns=2;s=" + identifier);
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Writing value: " + value + " to node: ns=1;s=" + identifier);
     
     try
     {
         // TODO der identifier der nodeID kann auch bytestring, guid o.ä. sein -> auslagern in eigene Methoden
         // TODO namespaceIndex variable gestalten
-        char* chIdentifier = util::stringToChar(identifier);
-        const UA_NodeId nodeID = UA_NODEID_STRING(2, chIdentifier);
+        UA_NodeId nodeID = UA_NODEID_STRING_ALLOC(1, identifier.c_str());
 
         // TODO neben in16 gibt es noch viele weitere datentypen, hierzu jeweils eine methode erstelleb, ggf. mit vererbung, abstraktion, interfaces etc.
-        UA_Variant variant;
-        UA_Variant_setScalar(&variant, &value, &UA_TYPES[UA_TYPES_BOOLEAN]);
+        UA_String uaString = UA_String_fromChars(value.c_str());
+        UA_Variant* variant = UA_Variant_new();
+        UA_Variant_setScalar(variant, &uaString, &UA_TYPES[UA_TYPES_STRING]);
 
-        UA_StatusCode statusCode = writeValue(nodeID, variant);
+        writeValue(nodeID, *variant);
         
     }
     catch (OpcUAException& error)
     {
         logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
     }
+}
+
+std::string OpcUAClient::readValue(UA_NodeId nodeID, UA_Variant variantToRead)
+{
+    UA_StatusCode statusCode = UA_Client_readValueAttribute(client, nodeID, &variantToRead);
+
+    if (UA_StatusCode_isBad(statusCode))
+    {
+        throw OpcUAException(statusCode);
+    }
+    else
+    {
+        UA_String uaResult = *(UA_String*) variantToRead.data;
+
+
+        char* convert = (char*)UA_malloc(sizeof(char) * uaResult.length + 1);
+        memcpy(convert, uaResult.data, uaResult.length);
+        convert[uaResult.length] = '\0';
+
+
+
+        std::string result = convert;
+
+        return result;
+    }
+}
+
+std::string OpcUAClient::readService(std::string identifier)
+{
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Read node: ns=1;s=" + identifier);
+    try
+    {
+        // TODO der identifier der nodeID kann auch bytestring, guid o.ä. sein -> auslagern in eigene Methoden
+        // TODO namespaceIndex variable gestalten
+        char* chIdentifier = util::stringToChar(identifier);
+        const UA_NodeId nodeID = UA_NODEID_STRING(1, chIdentifier);
+
+        UA_Variant resultVariant; /* Variants can hold scalar values and arrays of any type */
+        UA_Variant_init(&resultVariant);
+
+        std::string value = readValue(nodeID, resultVariant);
+
+        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Value is: " + value);
+
+        return value;
+    }
+    catch (OpcUAException& error)
+    {
+        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
+        return "error";
+    }
+    
 }
 
 void OpcUAClient::cleanClient()

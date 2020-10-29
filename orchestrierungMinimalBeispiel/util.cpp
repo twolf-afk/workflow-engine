@@ -31,6 +31,18 @@ std::string util::stringToUpperCaseString(std::string string)
 	return string;
 }
 
+std::string util::boolToString(bool value)
+{
+	if (value)
+	{
+		return "true";
+	}
+	else
+	{
+		return "false";
+	}
+}
+
 char* util::stringToChar(std::string string)
 {
 
