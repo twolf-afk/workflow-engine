@@ -1,15 +1,18 @@
 #include "engine.h"
 
 #include "logUtil.h"
-#include "xmlParser.h"
+#include "wsdlParser.h"
 #include "OpcUAClient.h"
+#include "indexFileParser.h"
 
 #include <typeinfo>
 
 void Engine::executeService(std::string fileName)
 {
+	indexFileParser indexFile = indexFileParser("indexfile.xml");
+	std::map<int, std::string> process = indexFile.getProcess();
 
-	xmlParser xml = xmlParser();
+	wsdlParser xml = wsdlParser();
 	xml.initXmlParserGetDocumentGetRootElement(fileName);
 
 	xml.getUrlFromDocument();

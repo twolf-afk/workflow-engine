@@ -3507,3 +3507,22 @@
 [2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 108] OPC UA input node: flasche
 [2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 109] Input value: true
 [2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 118] OPC UA output node: andrea
+[2020-11-02.22:12:55][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:14:24][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:15:18][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:16:07][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:16:07][DEBUG][class indexFileParser][Line: 63] et URL to: 
+[2020-11-02.22:17:09][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:17:09][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-02.22:17:52][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:17:52][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-02.22:18:06][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:18:06][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-02.22:18:58][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:18:58][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-02.22:19:06][DEBUG][class indexFileParser][Line: 63] Number: 2
+[2020-11-02.22:19:45][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 73] WSDL filename: V90ConveyerBelt.wsdl
+[2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 63] Number: 2
+[2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 73] WSDL filename: PneumaticCyclinder.wsdl

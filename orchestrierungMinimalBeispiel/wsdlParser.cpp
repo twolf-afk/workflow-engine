@@ -41,8 +41,8 @@ void wsdlParser::setOutputValue(std::string value)
 xercesc_3_2::DOMElement* wsdlParser::getElementByNameAndIndexFromElement(std::string elementTagName, int index, xercesc_3_2::DOMElement* element)
 {
 
-    XMLCh* tageName = xercesc_3_2::XMLString::transcode(elementTagName.c_str());
-    xercesc_3_2::DOMNodeList* nodes = element->getElementsByTagName(tageName);
+    XMLCh* tagName = xercesc_3_2::XMLString::transcode(elementTagName.c_str());
+    xercesc_3_2::DOMNodeList* nodes = element->getElementsByTagName(tagName);
     xercesc_3_2::DOMNode* node = nodes->item(index);
     xercesc_3_2::DOMElement* childElement = dynamic_cast<xercesc::DOMElement*>(node);
 
