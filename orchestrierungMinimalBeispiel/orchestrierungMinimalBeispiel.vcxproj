@@ -148,10 +148,10 @@
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
     <ClCompile Include="orchestrierungMinimalBeispiel.cpp" />
+    <ClCompile Include="service.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="engine.cpp" />
-    <ClCompile Include="xmlCreator.cpp" />
-    <ClCompile Include="xmlParser.cpp" />
+    <ClCompile Include="wsdlParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="configFileUtil.h" />
@@ -159,10 +159,10 @@
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="orchestrierungMinimalBeispiel.h" />
+    <ClInclude Include="service.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="engine.h" />
-    <ClInclude Include="xmlCreator.h" />
-    <ClInclude Include="xmlParser.h" />
+    <ClInclude Include="wsdlParser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
