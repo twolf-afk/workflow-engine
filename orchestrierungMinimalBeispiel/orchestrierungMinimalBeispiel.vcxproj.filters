@@ -23,13 +23,7 @@
     <ClCompile Include="configFileUtil.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="xmlParser.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="opcuaClient.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="xmlCreator.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="OpcUAException.cpp">
@@ -38,16 +32,22 @@
     <ClCompile Include="engine.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="service.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="wsdlParser.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="orchestrierungMinimalBeispiel.h" />
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="configFileUtil.h" />
-    <ClInclude Include="xmlParser.h" />
     <ClInclude Include="opcuaClient.h" />
-    <ClInclude Include="xmlCreator.h" />
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="engine.h" />
+    <ClInclude Include="service.h" />
+    <ClInclude Include="wsdlParser.h" />
   </ItemGroup>
 </Project>

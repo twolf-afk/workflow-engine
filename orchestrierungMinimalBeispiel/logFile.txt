@@ -3430,3 +3430,80 @@
 [2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
 [2020-10-29.23:03:12][DEBUG][class OpcUAClient][Line: 112] Value is: andi
 [2020-10-29.23:03:12][DEBUG][class Engine][Line: 38] Execution of service: testService.wsdl done
+[2020-11-02.17:29:56][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.17:31:07][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.17:31:56][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.17:33:58][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.17:35:59][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.17:37:34][INFO][class orchestrierungMinimalBeispiel][Line: 13] Start Orchestration
+[2020-11-02.18:09:56][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:09:56][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:09:56][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:09:56][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:10:01][DEBUG][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-02.18:12:21][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:12:21][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:12:21][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:12:21][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:13:27][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:13:27][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:13:27][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:13:27][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:14:01][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:14:01][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:14:01][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:14:01][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:16:45][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:16:45][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:16:45][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:16:45][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:17:12][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:17:12][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:17:12][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:17:12][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:29:58][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:29:58][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:29:58][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:29:58][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:38:35][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:38:35][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:38:35][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:38:35][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:39:37][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:39:37][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:39:37][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:39:37][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:44:00][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:44:00][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:44:00][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:44:00][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:45:06][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:45:06][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:45:06][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:45:06][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:48:49][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:48:49][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:48:49][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:48:49][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:53:20][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:53:20][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:53:20][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:53:20][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:55:17][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:55:17][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:55:17][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:55:17][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.18:56:52][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.18:56:52][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-02.18:56:52][DEBUG][class xmlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-02.18:56:52][DEBUG][class xmlParser][Line: 109] Input value: andi
+[2020-11-02.20:52:35][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.20:52:35][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://http
+[2020-11-02.20:52:35][DEBUG][class xmlParser][Line: 108] OPC UA input node: flasche
+[2020-11-02.20:52:35][DEBUG][class xmlParser][Line: 109] Input value: true
+[2020-11-02.20:52:38][DEBUG][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-02.20:53:00][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 97] Set URL to: opc.tcp://http
+[2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 108] OPC UA input node: flasche
+[2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 109] Input value: true
+[2020-11-02.20:53:00][DEBUG][class xmlParser][Line: 118] OPC UA output node: andrea
