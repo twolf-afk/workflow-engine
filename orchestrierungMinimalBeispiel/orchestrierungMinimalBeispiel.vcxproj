@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="configFileUtil.cpp" />
+    <ClCompile Include="indexFileParser.cpp" />
     <ClCompile Include="logUtil.cpp" />
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
@@ -155,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="configFileUtil.h" />
+    <ClInclude Include="indexFileParser.h" />
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
