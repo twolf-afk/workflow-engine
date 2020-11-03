@@ -3526,3 +3526,218 @@
 [2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 73] WSDL filename: V90ConveyerBelt.wsdl
 [2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 63] Number: 2
 [2020-11-02.22:19:45][DEBUG][class indexFileParser][Line: 73] WSDL filename: PneumaticCyclinder.wsdl
+[2020-11-03.11:05:58][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:05:58][DEBUG][class indexFileParser][Line: 63] Number: 1
+[2020-11-03.11:05:58][DEBUG][class indexFileParser][Line: 73] WSDL filename: V90ConveyerBelt.wsdl
+[2020-11-03.11:05:58][DEBUG][class indexFileParser][Line: 63] Number: 2
+[2020-11-03.11:05:58][DEBUG][class indexFileParser][Line: 73] WSDL filename: PneumaticCyclinder.wsdl
+[2020-11-03.11:05:58][DEBUG][class Engine][Line: 52] Process Key: 1
+[2020-11-03.11:05:58][DEBUG][class Engine][Line: 53] Process Value: V90ConveyerBelt.wsdl
+[2020-11-03.11:05:58][DEBUG][class Engine][Line: 52] Process Key: 2
+[2020-11-03.11:05:58][DEBUG][class Engine][Line: 53] Process Value: PneumaticCyclinder.wsdl
+[2020-11-03.11:06:25][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:06:26][DEBUG][class Engine][Line: 52] Process Key: 1
+[2020-11-03.11:06:26][DEBUG][class Engine][Line: 53] Process Value: V90ConveyerBelt.wsdl
+[2020-11-03.11:06:26][DEBUG][class Engine][Line: 52] Process Key: 2
+[2020-11-03.11:06:26][DEBUG][class Engine][Line: 53] Process Value: PneumaticCyclinder.wsdl
+[2020-11-03.11:07:27][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:07:27][DEBUG][class Engine][Line: 52] Process Key: 1
+[2020-11-03.11:07:27][DEBUG][class Engine][Line: 53] Process Value: V90ConveyerBelt.wsdl
+[2020-11-03.11:07:27][DEBUG][class wsdlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:07:27][DEBUG][class wsdlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-03.11:07:27][DEBUG][class wsdlParser][Line: 109] Input value: andi
+[2020-11-03.11:07:32][DEBUG][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-03.11:09:18][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 52] Process Key: 1
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 53] Process Value: V90ConveyerBelt.wsdl
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 109] Input value: andi
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 118] OPC UA output node: theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 39] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 52] Process Key: 2
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 53] Process Value: PneumaticCyclinder.wsdl
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 109] Input value: andi
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:09:18][DEBUG][class wsdlParser][Line: 118] OPC UA output node: theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:09:18][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-11-03.11:09:18][DEBUG][class Engine][Line: 39] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:10:11][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 52] Process Key: 1
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 53] Process Value: V90ConveyerBelt.wsdl
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 109] Input value: andi
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 118] OPC UA output node: theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 39] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 52] Process Key: 2
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 53] Process Value: PneumaticCyclinder.wsdl
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 97] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 108] OPC UA input node: theanswer
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 109] Input value: XXXXXXXXXXX
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 50] Writing value: XXXXXXXXXXX to node: ns=1;s=theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:10:11][DEBUG][class wsdlParser][Line: 118] OPC UA output node: theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:10:11][DEBUG][class OpcUAClient][Line: 112] Value is: XXXXXXXXXXX
+[2020-11-03.11:10:11][DEBUG][class Engine][Line: 39] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:16:57][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:16:57][INFO][class Engine][Line: 47] Execute process: indexfile.xml
+[2020-11-03.11:16:57][INFO][class Engine][Line: 12] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:16:57][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-03.11:16:57][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:16:57][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:16:57][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:16:57][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:16:57][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-11-03.11:16:57][INFO][class Engine][Line: 42] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:16:57][INFO][class Engine][Line: 12] Start execution of service: PneumaticCyclinder.wsdl
+[2020-11-03.11:16:57][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:16:57][DEBUG][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:16:58][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:16:58][DEBUG][class wsdlParser][Line: 114] Input value: XXXXXXXXXXX
+[2020-11-03.11:16:58][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:16:58][DEBUG][class OpcUAClient][Line: 50] Writing value: XXXXXXXXXXX to node: ns=1;s=theanswer
+[2020-11-03.11:16:58][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:16:58][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:16:58][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:16:58][DEBUG][class OpcUAClient][Line: 112] Value is: XXXXXXXXXXX
+[2020-11-03.11:16:58][INFO][class Engine][Line: 42] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:16:58][INFO][class orchestrierungMinimalBeispiel][Line: 18] Stop Orchestration
+[2020-11-03.11:17:56][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:17:56][INFO][class Engine][Line: 47] Execute process: indexfile.xml
+[2020-11-03.11:17:56][INFO][class Engine][Line: 12] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 50] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 112] Value is: andi
+[2020-11-03.11:17:56][INFO][class Engine][Line: 42] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:17:56][INFO][class Engine][Line: 12] Start execution of service: PneumaticCyclinder.wsdl
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:17:56][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 114] Input value: XXXXXXXXXXX
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 50] Writing value: XXXXXXXXXXX to node: ns=1;s=theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:17:56][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 99] Read node: ns=1;s=theanswer
+[2020-11-03.11:17:56][DEBUG][class OpcUAClient][Line: 112] Value is: XXXXXXXXXXX
+[2020-11-03.11:17:56][INFO][class Engine][Line: 42] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:17:56][INFO][class orchestrierungMinimalBeispiel][Line: 18] Stop Orchestration
+[2020-11-03.11:21:20][INFO][class orchestrierungMinimalBeispiel][Line: 12] Start Orchestration
+[2020-11-03.11:21:20][INFO][class Engine][Line: 47] Execute process: indexfile.xml
+[2020-11-03.11:21:20][INFO][class Engine][Line: 12] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 49] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:21:20][DEBUG][class OpcUAClient][Line: 102] Read node: ns=1;s=theanswer
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 78] Statuscode: Good
+[2020-11-03.11:21:20][DEBUG][class OpcUAClient][Line: 115] Value is: andi
+[2020-11-03.11:21:20][INFO][class Engine][Line: 42] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:21:20][INFO][class Engine][Line: 12] Start execution of service: PneumaticCyclinder.wsdl
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:21:20][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 114] Input value: XXXXXXXXXXX
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 49] Writing value: XXXXXXXXXXX to node: ns=1;s=theanswer
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:21:20][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:21:20][DEBUG][class OpcUAClient][Line: 102] Read node: ns=1;s=theanswer
+[2020-11-03.11:21:20][INFO][class OpcUAClient][Line: 78] Statuscode: Good
+[2020-11-03.11:21:20][DEBUG][class OpcUAClient][Line: 115] Value is: XXXXXXXXXXX
+[2020-11-03.11:21:20][INFO][class Engine][Line: 42] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:21:20][INFO][class orchestrierungMinimalBeispiel][Line: 18] Stop Orchestration
+[2020-11-03.11:32:17][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-11-03.11:32:37][INFO][class Engine][Line: 47] Execute process: ../processesindexfile.xml
+[2020-11-03.11:33:00][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-11-03.11:33:11][INFO][class Engine][Line: 47] Execute process: ../processesindexfile.xml
+[2020-11-03.11:33:24][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-11-03.11:33:35][INFO][class Engine][Line: 47] Execute process: ../processes/indexfile.xml
+[2020-11-03.11:33:41][INFO][class Engine][Line: 12] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:33:41][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:35:23][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-11-03.11:35:23][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-03.11:35:23][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:35:23][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:35:23][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:35:23][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:35:23][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:35:23][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-03.11:35:58][INFO][class orchestrierungMinimalBeispiel][Line: 11] Start Orchestration
+[2020-11-03.11:35:58][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-03.11:35:58][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 49] Writing value: andi to node: ns=1;s=theanswer
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:35:58][DEBUG][class OpcUAClient][Line: 102] Read node: ns=1;s=theanswer
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 78] Statuscode: Good
+[2020-11-03.11:35:58][DEBUG][class OpcUAClient][Line: 115] Value is: andi
+[2020-11-03.11:35:58][INFO][class Engine][Line: 45] Execution of service: V90ConveyerBelt.wsdl done
+[2020-11-03.11:35:58][INFO][class Engine][Line: 13] Start execution of service: PneumaticCyclinder.wsdl
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:35:58][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 114] Input value: XXXXXXXXXXX
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 27] Create and connect client successful
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 49] Writing value: XXXXXXXXXXX to node: ns=1;s=theanswer
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 38] Statuscode: Good
+[2020-11-03.11:35:58][DEBUG][class wsdlParser][Line: 123] OPC UA output node: theanswer
+[2020-11-03.11:35:58][DEBUG][class OpcUAClient][Line: 102] Read node: ns=1;s=theanswer
+[2020-11-03.11:35:58][INFO][class OpcUAClient][Line: 78] Statuscode: Good
+[2020-11-03.11:35:59][DEBUG][class OpcUAClient][Line: 115] Value is: XXXXXXXXXXX
+[2020-11-03.11:35:59][INFO][class Engine][Line: 45] Execution of service: PneumaticCyclinder.wsdl done
+[2020-11-03.11:35:59][INFO][class orchestrierungMinimalBeispiel][Line: 17] Stop Orchestration
+[2020-11-03.11:57:41][INFO][class orchestrierung][Line: 11] Start Orchestration
+[2020-11-03.11:57:42][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-03.11:57:42][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-03.11:57:42][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-03.11:57:42][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-03.11:57:42][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-03.11:57:42][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-03.11:57:42][DEBUG][class wsdlParser][Line: 114] Input value: andi

@@ -7,39 +7,20 @@ configFileUtil::confParam configFileUtil::readConfig()
 {
 	confParam parameter;
 
-	std::ifstream file("dbconfiguration.cfg");
+	std::ifstream file("../dbconfiguration.cfg");
 	std::string strLine;
 
 	while (std::getline(file, strLine))
 	{
 
-		if (strLine.find("hostname") != std::string::npos)
+		if (strLine.find("services") != std::string::npos)
 		{
-			parameter.strHostname = strLine.substr(strLine.find("=") + 2, strLine.length());
+			parameter.pathToServices = strLine.substr(strLine.find("=") + 2, strLine.length());
 		}
 
-		if (strLine.find("username") != std::string::npos)
+		if (strLine.find("processes") != std::string::npos)
 		{
-			parameter.strUsername = strLine.substr(strLine.find("=") + 2, strLine.length());
-		}
-
-		if (strLine.find("password") != std::string::npos)
-		{
-			parameter.strPassword = strLine.substr(strLine.find("=") + 2, strLine.length());
-		}
-
-		if (strLine.find("port") != std::string::npos)
-		{
-			parameter.strPort = strLine.substr(strLine.find("=") + 2, strLine.length());
-		}
-
-		if (strLine.find("station") != std::string::npos)
-		{
-			parameter.strStation = strLine.substr(strLine.find("=") + 2, strLine.length());
-		}
-		if (strLine.find("barcodeTag") != std::string::npos)
-		{
-			parameter.strTag = strLine.substr(strLine.find("=") + 2, strLine.length());
+			parameter.pathToProcesses = strLine.substr(strLine.find("=") + 2, strLine.length());
 		}
 
 	}

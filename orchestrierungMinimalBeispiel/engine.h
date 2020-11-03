@@ -9,8 +9,9 @@ class Engine
 
 public:
 
-	static void executeService(std::string fileName);
+	static void executeService(std::string serviceName);
 
+	static void executeProcess(std::string processName);
 
 };
 

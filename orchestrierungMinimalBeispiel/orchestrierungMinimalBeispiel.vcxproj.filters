@@ -11,9 +11,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="orchestrierungMinimalBeispiel.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="logUtil.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
@@ -41,9 +38,11 @@
     <ClCompile Include="indexFileParser.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="orchestrierung.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="orchestrierungMinimalBeispiel.h" />
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="configFileUtil.h" />
@@ -53,5 +52,6 @@
     <ClInclude Include="service.h" />
     <ClInclude Include="wsdlParser.h" />
     <ClInclude Include="indexFileParser.h" />
+    <ClInclude Include="orchestrierung.h" />
   </ItemGroup>
 </Project>

@@ -18,13 +18,13 @@ bool OpcUAClient::createAndConnectClient(std::string url)
     
     if (statusCode != UA_STATUSCODE_GOOD) {
         UA_Client_delete(client);
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error, could not create and connect client");
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + statusCode);
+        logUtil::writeLogMessageToConsoleAndFile("error", typeid(OpcUAClient).name(), __LINE__, "Error, could not create and connect client");
+        logUtil::writeLogMessageToConsoleAndFile("error", typeid(OpcUAClient).name(), __LINE__, "Error code: " + statusCode);
         return false;
     }
     else
     {
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Create and connect client successful");
+        logUtil::writeLogMessageToConsoleAndFile("info", typeid(OpcUAClient).name(), __LINE__, "Create and connect client successful");
         return true;
     }
 }
@@ -35,9 +35,8 @@ void OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 
     std::string readableStatuscode = UA_StatusCode_name(statusCode);
 
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Statuscode: " + readableStatuscode);
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(OpcUAClient).name(), __LINE__, "Statuscode: " + readableStatuscode);
     
-    // TODO am besten immer den statuscode in den logger schmeissen -> bringt mehr infos
     if (UA_StatusCode_isBad(statusCode))
     {
         throw OpcUAException(statusCode);
@@ -47,7 +46,7 @@ void OpcUAClient::writeValue(UA_NodeId nodeID, UA_Variant variant)
 
 void OpcUAClient::writeService(std::string value, std::string identifier)
 {
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Writing value: " + value + " to node: ns=1;s=" + identifier);
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(OpcUAClient).name(), __LINE__, "Writing value: " + value + " to node: ns=1;s=" + identifier);
     
     try
     {
@@ -65,13 +64,18 @@ void OpcUAClient::writeService(std::string value, std::string identifier)
     }
     catch (OpcUAException& error)
     {
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
+        logUtil::writeLogMessageToConsoleAndFile("error", typeid(OpcUAClient).name(), __LINE__, "Error code: " + error.getErrorMessage());
     }
 }
 
 std::string OpcUAClient::readValue(UA_NodeId nodeID, UA_Variant variantToRead)
 {
     UA_StatusCode statusCode = UA_Client_readValueAttribute(client, nodeID, &variantToRead);
+
+    // TODO hier wird der statuscode im schlechten fall zweimal ausgegeben
+    std::string readableStatuscode = UA_StatusCode_name(statusCode);
+
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(OpcUAClient).name(), __LINE__, "Statuscode: " + readableStatuscode);
 
     if (UA_StatusCode_isBad(statusCode))
     {
@@ -81,13 +85,12 @@ std::string OpcUAClient::readValue(UA_NodeId nodeID, UA_Variant variantToRead)
     {
         UA_String uaResult = *(UA_String*) variantToRead.data;
 
-
+        // TODO auslagern in util
         char* convert = (char*)UA_malloc(sizeof(char) * uaResult.length + 1);
         memcpy(convert, uaResult.data, uaResult.length);
         convert[uaResult.length] = '\0';
 
-
-
+        // TODO result umbenennen
         std::string result = convert;
 
         return result;

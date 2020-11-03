@@ -4,17 +4,21 @@
 #include "wsdlParser.h"
 #include "OpcUAClient.h"
 #include "indexFileParser.h"
+#include "configFileUtil.h"
 
 #include <typeinfo>
 
-void Engine::executeService(std::string fileName)
+void Engine::executeService(std::string serviceName)
 {
-	indexFileParser indexFile = indexFileParser("indexfile.xml");
-	std::map<int, std::string> process = indexFile.getProcess();
+	logUtil::writeLogMessageToConsoleAndFile("info", typeid(Engine).name(), __LINE__, "Start execution of service: " + serviceName);
 
+	configFileUtil::confParam parameter = configFileUtil::readConfig();
+
+	// TODO "xml" umbennen
 	wsdlParser xml = wsdlParser();
-	xml.initXmlParserGetDocumentGetRootElement(fileName);
+	xml.initXmlParserGetDocumentGetRootElement(parameter.pathToServices + serviceName);
 
+	// TODO delete "FromDocument"
 	xml.getUrlFromDocument();
 
 	xml.getInput();
@@ -38,5 +42,22 @@ void Engine::executeService(std::string fileName)
 
 	client.cleanClient();
 
-	logUtil::writeLogMessageToConsoleAndFile("debug", typeid(Engine).name(), __LINE__, "Execution of service: " + fileName + " done");
+	logUtil::writeLogMessageToConsoleAndFile("info", typeid(Engine).name(), __LINE__, "Execution of service: " + serviceName + " done");
+}
+
+void Engine::executeProcess(std::string processName)
+{
+	logUtil::writeLogMessageToConsoleAndFile("info", typeid(Engine).name(), __LINE__, "Execute process: " + processName);
+
+	indexFileParser indexFile = indexFileParser(processName); // "indexfile.xml"
+	std::map<int, std::string> processMap = indexFile.getProcess();
+
+	std::map<int, std::string>::iterator it;
+
+	for (it = processMap.begin(); it != processMap.end(); it++)
+	{
+		executeService(it->second);
+	}
+
+
 }

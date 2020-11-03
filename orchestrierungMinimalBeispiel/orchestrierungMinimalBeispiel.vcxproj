@@ -24,6 +24,7 @@
     <ProjectGuid>{a4dfdddd-b22c-414c-ad66-649e93ceca5e}</ProjectGuid>
     <RootNamespace>orchestrierungMinimalBeispiel</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>orchestrierung</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -148,7 +149,7 @@
     <ClCompile Include="logUtil.cpp" />
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
-    <ClCompile Include="orchestrierungMinimalBeispiel.cpp" />
+    <ClCompile Include="orchestrierung.cpp" />
     <ClCompile Include="service.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="engine.cpp" />
@@ -160,7 +161,7 @@
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
-    <ClInclude Include="orchestrierungMinimalBeispiel.h" />
+    <ClInclude Include="orchestrierung.h" />
     <ClInclude Include="service.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="engine.h" />

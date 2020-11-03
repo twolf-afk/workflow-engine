@@ -60,6 +60,8 @@ std::string wsdlParser::getAttributeAndConvertToString(xercesc_3_2::DOMElement* 
 
 void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Initialization of xml parser");
+
     xercesc_3_2::XMLPlatformUtils::Initialize();
 
     // TODO eigene Exception schreiben
@@ -89,17 +91,20 @@ void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 
 void wsdlParser::getUrlFromDocument()
 {
+    
 
     xercesc_3_2::DOMElement* soapElement = getElementByNameAndIndexFromElement("soap:address", 0, rootElement);
 
     url = getAttributeAndConvertToString(soapElement, "location");
 
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "Set URL to: " + url);
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Set URL to: " + url);
     
 }
 
 void wsdlParser::getInput()
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Parse input information");
+
     xercesc_3_2::DOMElement* inputElement = getElementByNameAndIndexFromElement("element", 1, rootElement);
 
     inputOpcUaNodeName = getAttributeAndConvertToString(inputElement, "name");
