@@ -12,12 +12,8 @@ public:
 
 	struct confParam {
 
-		std::string strHostname;
-		std::string strUsername;
-		std::string strPassword;
-		std::string strPort;
-		std::string strStation;
-		std::string strTag;
+		std::string pathToServices;
+		std::string pathToProcesses;
 
 	};
 

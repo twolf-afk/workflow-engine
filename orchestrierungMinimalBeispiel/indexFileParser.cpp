@@ -60,8 +60,6 @@ std::map<int, std::string> indexFileParser::getProcess()
         std::string strSequenceNumber = XMLString::transcode(xmlChsequenceNumber);
         int sequenceNumber = std::stoi(strSequenceNumber);
 
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(indexFileParser).name(), __LINE__, "Number: " + std::to_string(sequenceNumber));
-
         XMLCh* linkTagName = XMLString::transcode("link");
         DOMNodeList* links = currentService->getElementsByTagName(linkTagName);
         DOMNode* link = links->item(0);
@@ -69,8 +67,6 @@ std::map<int, std::string> indexFileParser::getProcess()
 
         const XMLCh* xmlChText = link->getTextContent();
         std::string text = XMLString::transcode(xmlChText);
-
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(indexFileParser).name(), __LINE__, "WSDL filename: " + text);
 
         process[sequenceNumber] = text;
 
