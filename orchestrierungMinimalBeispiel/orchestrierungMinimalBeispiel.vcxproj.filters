@@ -41,6 +41,9 @@
     <ClCompile Include="orchestrierung.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="opcuaServer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logUtil.h" />
@@ -53,5 +56,6 @@
     <ClInclude Include="wsdlParser.h" />
     <ClInclude Include="indexFileParser.h" />
     <ClInclude Include="orchestrierung.h" />
+    <ClInclude Include="opcuaServer.h" />
   </ItemGroup>
 </Project>

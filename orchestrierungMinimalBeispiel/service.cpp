@@ -1,5 +1,7 @@
 #include "service.h"
 
+#include "configFileUtil.h"
+
 #include <fstream>
 
 service::service()
@@ -23,8 +25,13 @@ service::service()
 	outputValue = "";
 }
 
+// TODO nicht "AsXml" das ergebnis ist eine wsdl datei -> aendern
 void service::createServiceAsXml(string filename)
 {
+
+	configFileUtil::confParam parameter = configFileUtil::readConfig();
+
+	filename = parameter.pathToServices + filename;
 
 	std::ofstream wsdlFile(filename);
 	wsdlFile << "<?xml version=\"1.0\"?>" << endl;
