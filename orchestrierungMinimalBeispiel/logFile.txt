@@ -3741,3 +3741,52 @@
 [2020-11-03.11:57:42][INFO][class wsdlParser][Line: 106] Parse input information
 [2020-11-03.11:57:42][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
 [2020-11-03.11:57:42][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-05.13:03:26][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.13:03:26][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-05.13:03:26][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-05.13:03:26][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-05.13:03:26][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-05.13:03:26][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-05.13:03:26][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-05.13:03:26][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-05.13:03:31][ERROR][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-05.15:31:56][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:36:18][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:48:47][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:49:00][INFO][class opcuaServer][Line: 25] executeProcessCallback was called
+[2020-11-05.15:49:39][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:49:45][INFO][class opcuaServer][Line: 25] executeProcessCallback was called
+[2020-11-05.15:53:09][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:53:19][INFO][class opcuaServer][Line: 23] executeProcessCallback was called
+[2020-11-05.15:59:17][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.15:59:25][INFO][class opcuaServer][Line: 24] executeProcessCallback was called
+[2020-11-05.16:01:36][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.16:01:43][INFO][class opcuaServer][Line: 24] executeProcessCallback was called
+[2020-11-05.16:03:01][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.16:03:11][INFO][class opcuaServer][Line: 24] executeProcessCallback was called
+[2020-11-05.16:04:47][INFO][class orchestrierung][Line: 12] Start Orchestration
+[2020-11-05.16:04:55][INFO][class opcuaServer][Line: 24] executeProcessCallback was called
+[2020-11-05.16:04:55][INFO][class opcuaServer][Line: 38] Execute Process: Tobi
+[2020-11-05.16:13:33][INFO][class orchestrierung][Line: 10] Start Orchestration
+[2020-11-05.16:13:42][INFO][class opcuaServer][Line: 26] executeProcessCallback was called
+[2020-11-05.16:13:42][INFO][class opcuaServer][Line: 40] Execute Process: Tobi
+[2020-11-05.16:13:42][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-05.16:13:42][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-05.16:13:42][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-05.16:13:42][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-05.16:13:42][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-05.16:13:42][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-05.16:13:42][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-05.16:13:47][ERROR][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-05.16:14:09][INFO][class orchestrierung][Line: 10] Start Orchestration
+[2020-11-05.16:14:33][INFO][class opcuaServer][Line: 26] executeProcessCallback was called
+[2020-11-05.16:14:33][INFO][class opcuaServer][Line: 40] Execute Process: indexfile.xml
+[2020-11-05.16:14:33][INFO][class Engine][Line: 50] Execute process: ../processes/indexfile.xml
+[2020-11-05.16:14:33][INFO][class Engine][Line: 13] Start execution of service: V90ConveyerBelt.wsdl
+[2020-11-05.16:14:33][INFO][class wsdlParser][Line: 63] Initialization of xml parser
+[2020-11-05.16:14:33][INFO][class wsdlParser][Line: 100] Set URL to: opc.tcp://DESKTOP-0AULV4D:4840/
+[2020-11-05.16:14:33][INFO][class wsdlParser][Line: 106] Parse input information
+[2020-11-05.16:14:33][DEBUG][class wsdlParser][Line: 113] OPC UA input node: theanswer
+[2020-11-05.16:14:33][DEBUG][class wsdlParser][Line: 114] Input value: andi
+[2020-11-05.16:14:38][ERROR][class OpcUAClient][Line: 21] Error, could not create and connect client
+[2020-11-05.16:15:51][INFO][class orchestrierung][Line: 10] Start Orchestration

@@ -131,7 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\xerces-c\include;D:\Arbeit\MSVisualStudio_Workspace\orchestrierungMinimalBeispiel\libs\boost.1.72.0.0\lib\native\include;C:\Program Files %28x86%29\open62541\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\xerces-c\include;D:\Arbeit\MSVisualStudio_Workspace\masterarbeit\orchestrierung\libs\boost.1.72.0.0\lib\native\include;C:\Program Files %28x86%29\open62541\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -149,6 +149,7 @@
     <ClCompile Include="logUtil.cpp" />
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
+    <ClCompile Include="opcuaServer.cpp" />
     <ClCompile Include="orchestrierung.cpp" />
     <ClCompile Include="service.cpp" />
     <ClCompile Include="util.cpp" />
@@ -161,6 +162,7 @@
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
+    <ClInclude Include="opcuaServer.h" />
     <ClInclude Include="orchestrierung.h" />
     <ClInclude Include="service.h" />
     <ClInclude Include="util.h" />
