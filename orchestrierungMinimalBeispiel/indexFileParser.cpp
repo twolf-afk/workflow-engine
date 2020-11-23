@@ -36,13 +36,15 @@ void indexFileParser::initXmlParserGetDocumentGetRootElement(std::string fileNam
         const XMLCh* xmlChErrorMessage = e.getMessage();
         std::string errorMessage = XMLString::transcode(xmlChErrorMessage);
 
-        logUtil::writeLogMessageToConsoleAndFile("debug", typeid(indexFileParser).name(), __LINE__, errorMessage);
+        logUtil::writeLogMessageToConsoleAndFile("error", typeid(indexFileParser).name(), __LINE__, errorMessage);
 
     }
 }
 
-std::map<int, std::string> indexFileParser::getProcess()
+std::map<int, std::string> indexFileParser::getServices()
 {
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(indexFileParser).name(), __LINE__, "Get Services from process");
+
     std::map<int, std::string> process;
     
     XMLCh* tagName = XMLString::transcode("service");

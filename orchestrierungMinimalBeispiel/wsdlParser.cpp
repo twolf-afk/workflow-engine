@@ -11,29 +11,14 @@ std::string wsdlParser::getUrl()
     return url;
 }
 
-std::string wsdlParser::getInputOpcUaNodeName()
+std::queue<serviceInput> wsdlParser::getInputs()
 {
-    return inputOpcUaNodeName;
+    return inputs;
 }
 
-std::string wsdlParser::getInputValue()
+std::queue<serviceInput> wsdlParser::getOutputs()
 {
-    return inputValue;
-}
-
-std::string wsdlParser::getOutputOpcUaNodeName()
-{
-    return outputOpcUaNodeName;
-}
-
-std::string wsdlParser::getOutputValue()
-{
-    return outputValue;
-}
-
-void wsdlParser::setOutputValue(std::string value)
-{
-    outputValue = value;
+    return outputs;
 }
 
 // TODO index gibt das element an, welches aus der Liste ausgewaehlt wird
@@ -61,16 +46,17 @@ std::string wsdlParser::getAttributeAndConvertToString(xercesc_3_2::DOMElement* 
 void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 {
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Initialization of xml parser");
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Filename: " + fileName);
 
     xercesc_3_2::XMLPlatformUtils::Initialize();
 
     // TODO eigene Exception schreiben
-    // TODO aufruf von try und catch block in eigene funktionen auslagern
+    // TODO aufrufe in try catch block in eigene funktionen auslagern
     try
     {
         xercesc_3_2::XercesDOMParser* parser = new xercesc_3_2::XercesDOMParser();
         parser->setValidationScheme(xercesc_3_2::XercesDOMParser::Val_Always);
-        parser->setDoNamespaces(true);    // optional
+        parser->setDoNamespaces(true);
 
         parser->parse(fileName.c_str());
         
@@ -92,7 +78,6 @@ void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 void wsdlParser::getUrlFromDocument()
 {
     
-
     xercesc_3_2::DOMElement* soapElement = getElementByNameAndIndexFromElement("soap:address", 0, rootElement);
 
     url = getAttributeAndConvertToString(soapElement, "location");
@@ -101,24 +86,52 @@ void wsdlParser::getUrlFromDocument()
     
 }
 
+serviceInput wsdlParser::getArgumentsFromWsdl(xercesc_3_2::DOMElement* element, int i)
+{
+    xercesc_3_2::DOMElement* element = getElementByNameAndIndexFromElement("element", i, element);
+
+    serviceInput serviceInputArguments = serviceInput();
+
+    std::string nodeId = getAttributeAndConvertToString(element, "name");
+    serviceInputArguments.setNodeId(nodeId);
+
+    std::string datatype = getAttributeAndConvertToString(element, "type");
+    serviceInputArguments.setDatatype(datatype);
+
+    std::string value = getAttributeAndConvertToString(element, "value");
+    serviceInputArguments.setValue(value);
+
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "nodeID: " + nodeId);
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "datatype: " + datatype);
+    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "value: " + value);
+}
+
 void wsdlParser::getInput()
 {
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Parse input information");
 
-    xercesc_3_2::DOMElement* inputElement = getElementByNameAndIndexFromElement("element", 1, rootElement);
+    xercesc_3_2::DOMElement* inputElements = getElementByNameAndIndexFromElement("all", 0, rootElement);
+    size_t childsCount = inputElements->getChildElementCount();
+    
+    for (size_t i = 0; i < childsCount; i++)
+    {
+        serviceInput argument = wsdlParser::getArgumentsFromWsdl(inputElements, i);
 
-    inputOpcUaNodeName = getAttributeAndConvertToString(inputElement, "name");
-    inputValue = getAttributeAndConvertToString(inputElement, "value");
-
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "OPC UA input node: " + inputOpcUaNodeName);
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "Input value: " + inputValue);
+        inputs.push(argument);
+    }
 }
 
 void wsdlParser::getOutput()
 {
-    xercesc_3_2::DOMElement* outputElement = getElementByNameAndIndexFromElement("element", 3, rootElement);
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Parse output information");
 
-    outputOpcUaNodeName = getAttributeAndConvertToString(outputElement, "name");
+    xercesc_3_2::DOMElement* inputElements = getElementByNameAndIndexFromElement("all", 1, rootElement);
+    int childsCount = inputElements->getChildElementCount();
 
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "OPC UA output node: " + outputOpcUaNodeName);
+    for (int i = 0; i < childsCount; i++)
+    {
+        serviceInput argument = wsdlParser::getArgumentsFromWsdl(inputElements, i);
+
+        outputs.push(argument);
+    }
 }

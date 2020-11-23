@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<definitions
+
+name="StockQuote"
+targetNamespace="http://example.com/stockquote.wsdl"
+xmlns:tns="http://example.com/stockquote.wsdl"
+xmlns:xsd1="http://example.com/stockquote.xsd"
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+xmlns="http://schemas.xmlsoap.org/wsdl/">
+	
+
+	<service name="turnLightOnAndOff">
+        <documentation>This Service extend both pneumatic cylinders</documentation>
+        <port name="HWD_Transport" binding="tns:pickupObject">
+           <soap:address location="opc.tcp://192.168.1.76"/>
+        </port>
+    </service>
+
+	<portType name="HWD">
+        <operation name="moveRoboter">
+           <input message="moveRobot"/>
+           <output message="processDone"/>
+        </operation>
+    </portType>
+	
+	<message name="moveRobot">
+        <part name="body" element="xsd1:Switch"/>
+    </message>
+
+    <message name="processDone">
+        <part name="body" element="xsd1:Status"/>
+    </message>
+
+    <types>
+       <schema targetNamespace="http://example.com/stockquote.xsd" xmlns="http://www.w3.org/2000/10/XMLSchema">
+           <element name="Switch">
+              <complexType>
+				<all>
+					<element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Roboter.inputOpcUa_coordinateX" type="float" value="400"/>
+					<element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Roboter.inputOpcUa_coordinateY" type="float" value="400"/>
+					<element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Roboter.inputOpcUa_coordinateZ" type="float" value="400"/>
+					<element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Roboter.inputOpcUa_executeMovement" type="bool" value="true"/>
+                </all>
+              </complexType>
+           </element>
+           <element name="Status">
+              <complexType>
+                <all>
+					<element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Roboter.outputOpcUa_processDone" type="bool" value="false"/>
+                </all>
+              </complexType>
+           </element>
+       </schema>
+    </types>
+
+</definitions>

@@ -10,24 +10,24 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
 	
 
 	<service name="turnLightOnAndOff">
-        <documentation>This Service turns the light at the switch on and of</documentation>
-        <port name="HWD_Light" binding="tns:LightTrigger">
-           <soap:address location="opc.tcp://DESKTOP-0AULV4D:4840/"/>
+        <documentation>This Service moves the conveyer belt</documentation>
+        <port name="HWD_Transport" binding="tns:MoveConveyerBelt">
+           <soap:address location="opc.tcp://192.168.1.76"/>
         </port>
     </service>
 
 	<portType name="HWD">
-        <operation name="turnLightOnAndOff">
-           <input message="LightSwitch"/>
-           <output message="LightsStatus"/>
+        <operation name="moveConveyerBelt">
+           <input message="StartBelt"/>
+           <output message="processDone"/>
         </operation>
     </portType>
 	
-	<message name="LightSwitch">
+	<message name="moveConveyerBelt">
         <part name="body" element="xsd1:Switch"/>
     </message>
 
-    <message name="LightsStatus">
+    <message name="processDone">
         <part name="body" element="xsd1:Status"/>
     </message>
 
@@ -36,14 +36,14 @@ xmlns="http://schemas.xmlsoap.org/wsdl/">
            <element name="Switch">
               <complexType>
                   <all>
-                      <element name="theanswer" type="string" value="andi"/>
+                      <element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.inputOpcUa_startBelt" type="bool" value="true"/>
                   </all>
               </complexType>
            </element>
            <element name="Status">
               <complexType>
                   <all>
-                      <element name="theanswer" type="string" value=""/>
+                      <element name="ns=4;s=|var|CODESYS Control for Linux SL.Application.HWD_Foerderband_V90.outputOpcUa_processDone" type="bool" value="false"/>
                   </all>
               </complexType>
            </element>

@@ -21,7 +21,7 @@ public:
 
 	indexFileParser(std::string filename);
 
-	std::map<int, std::string> getProcess();
+	std::map<int, std::string> getServices();
 
 };
 

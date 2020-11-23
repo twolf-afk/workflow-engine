@@ -2,9 +2,12 @@
 
 #define XMLPARSER_H
 
+#include "serviceInput.h"
+
 #include <xercesc/dom/DOM.hpp>
 
 #include <string>
+#include <queue>
 
 class wsdlParser
 {
@@ -14,25 +17,19 @@ private:
 	xercesc_3_2::DOMElement* rootElement;
 	std::string url;
 
-	// TODO es gibt Dienste mit mehreren Variablen und Inputs
-	// diese variablen hier in eine Liste von inputs und outputs aendern
-	std::string inputOpcUaNodeName;
-	std::string inputValue;
-	std::string outputOpcUaNodeName;
-	std::string outputValue;
+	std::queue<serviceInput> inputs;
+	std::queue<serviceInput> outputs;
 
 	xercesc_3_2::DOMElement* getElementByNameAndIndexFromElement(std::string elementTagName, int index, xercesc_3_2::DOMElement* element);
 	std::string getAttributeAndConvertToString(xercesc_3_2::DOMElement* element, std::string attributeName);
 
+	serviceInput getArgumentsFromWsdl(xercesc_3_2::DOMElement* element, int i);
+
 public:	
 
 	std::string getUrl();
-	std::string getInputOpcUaNodeName();
-	std::string getInputValue();
-	std::string getOutputOpcUaNodeName();
-	std::string getOutputValue();
-
-	void setOutputValue(std::string value);
+	std::queue<serviceInput> getInputs();
+	std::queue<serviceInput> getOutputs();
 
 	void initXmlParserGetDocumentGetRootElement(std::string fileName);
 

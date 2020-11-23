@@ -5,6 +5,7 @@
 #include "OpcUAClient.h"
 #include "indexFileParser.h"
 #include "configFileUtil.h"
+#include "util.h"
 
 #include <typeinfo>
 
@@ -14,31 +15,35 @@ void Engine::executeService(std::string serviceName)
 
 	configFileUtil::confParam parameter = configFileUtil::readConfig();
 
-	// TODO "xml" umbennen
-	wsdlParser xml = wsdlParser();
-	xml.initXmlParserGetDocumentGetRootElement(parameter.pathToServices + serviceName);
+	wsdlParser serviceWsdl = wsdlParser();
+	serviceWsdl.initXmlParserGetDocumentGetRootElement(parameter.pathToServices + serviceName);
 
-	// TODO delete "FromDocument"
-	xml.getUrlFromDocument();
+	serviceWsdl.getUrlFromDocument();
 
-	xml.getInput();
+	serviceWsdl.getInput();
 
-	std::string url = xml.getUrl();
+	std::string url = serviceWsdl.getUrl();
 	OpcUAClient client;
 	client.createAndConnectClient(url);
-
-
-	std::string inputNode = xml.getInputOpcUaNodeName();
-	std::string valueToWrite = xml.getInputValue();
-	client.writeService(valueToWrite, inputNode);
+	
+	std::queue<serviceInput> inputs = serviceWsdl.getInputs();
+	client.writeService(inputs);
 	
 
-	xml.getOutput();
-	std::string outputNode = xml.getOutputOpcUaNodeName();
+	serviceWsdl.getOutput();
+	std::queue<serviceInput> outputs = serviceWsdl.getOutputs();
 	
-	std::string result = client.readService(outputNode);
-	
-	// nimm dann dort den namen (NodeID) und lese den Wert so lange bis dieser einen fertigen Prozess anzeigt
+	bool processDone = false;
+
+	while (!processDone)
+	{
+		processDone = client.readService(outputs);
+
+		Sleep(5000);
+
+	}
+
+	client.writeService(outputs);
 
 	client.cleanClient();
 
@@ -49,15 +54,25 @@ void Engine::executeProcess(std::string processName)
 {
 	logUtil::writeLogMessageToConsoleAndFile("info", typeid(Engine).name(), __LINE__, "Execute process: " + processName);
 
-	indexFileParser indexFile = indexFileParser(processName); // "indexfile.xml"
-	std::map<int, std::string> processMap = indexFile.getProcess();
+	indexFileParser indexFile = indexFileParser(processName);
+	std::map<int, std::string> services = indexFile.getServices();
 
-	std::map<int, std::string>::iterator it;
+	// OpcUAClient client;
+	// client.createAndConnectClient("opc.tcp://DESKTOP-0AULV4D:2/");
 
-	for (it = processMap.begin(); it != processMap.end(); it++)
+	// configFileUtil::confParam parameter = configFileUtil::readConfig();
+
+	std::map<int, std::string>::iterator iterator;
+	for (iterator = services.begin(); iterator != services.end(); iterator++)
 	{
-		executeService(it->second);
-	}
+		std::string serviceName = iterator->second;
 
+		// std::string service = client.callMethod(serviceName, "ns=1;s=Get Service");
+
+		// util::saveStringAsFile(service, parameter.pathToServices + serviceName);
+
+		executeService(serviceName);
+	}
+	// client.cleanClient();
 
 }
