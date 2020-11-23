@@ -2,11 +2,8 @@
 
 #include "logUtil.h"
 
-#include <boost/algorithm/string/classification.hpp>
-#include <boost/algorithm/string/split.hpp>
-#include <boost/algorithm/string.hpp>
-
 #include <ctime>
+#include <algorithm>
 #include <fstream>
 
 std::string util::getDateAndTime()
@@ -24,13 +21,21 @@ std::string util::getDateAndTime()
 std::vector<std::string> util::splitString(std::string stringToSplit, std::string seperator)
 {
 	std::vector<std::string> stringVector;
-	boost::split(stringVector, stringToSplit, boost::is_any_of(seperator));
+
+	size_t pos = 0;
+	std::string token;
+	while ((pos = stringToSplit.find(seperator)) != std::string::npos) {
+		token = stringToSplit.substr(0, pos);
+		stringVector.push_back(token);
+		stringToSplit.erase(0, pos + seperator.length());
+	}
+
 	return stringVector;
 }
 
 std::string util::stringToUpperCaseString(std::string string)
 {
-	boost::to_upper(string);
+	std::transform(string.begin(), string.end(), string.begin(), ::toupper);
 	return string;
 }
 
