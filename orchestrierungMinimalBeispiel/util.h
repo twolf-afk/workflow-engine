@@ -20,6 +20,8 @@ public:
 
 	static char* stringToChar(std::string);
 
+	static void saveStringAsFile(std::string string, std::string filename);
+
 };
 
 #endif

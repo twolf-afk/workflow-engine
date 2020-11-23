@@ -3,6 +3,9 @@
 #include "logUtil.h"
 #include "engine.h"
 #include "configFileUtil.h"
+#include "open62541Util.h"
+#include "OpcUAClient.h"
+#include "util.h"
 
 #include <open62541/server_config_default.h>
 #include <open62541/plugin/log_stdout.h>
@@ -19,39 +22,33 @@ static UA_StatusCode executeProcessCallback
     UA_Variant* output
 )
 {
-    UA_String* ptrInput = (UA_String*)input->data;
-    UA_String inputValue;
-    UA_String_init(&inputValue);
-
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "executeProcessCallback was called");
 
-    if (ptrInput->length > 0)
-    {
-        inputValue.data = (UA_Byte*)UA_realloc(inputValue.data, inputValue.length + ptrInput->length);
-        memcpy(&inputValue.data[inputValue.length], ptrInput->data, ptrInput->length);
-        inputValue.length += ptrInput->length;
-    }
+    UA_String* firstInput = (UA_String*)input->data;
+    std::string processName = open62541Util::uaStringPtrToStdString(firstInput);
 
-    char* chValue = (char*)UA_malloc(sizeof(char) * inputValue.length + 1);
-    memcpy(chValue, inputValue.data, inputValue.length);
-    chValue[inputValue.length] = '\0';
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Input Argument: " + processName);
 
-    std::string value(chValue);
-    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Execute Process: " + value);
+    // OpcUAClient client;
+    // client.createAndConnectClient("opc.tcp://DESKTOP-0AULV4D:2/");
+
+    // std::string process = client.callMethod(processName, "ns=1;s=Get Process");
+
+    // client.cleanClient();
 
     configFileUtil::confParam parameter = configFileUtil::readConfig();
-    Engine::executeProcess(parameter.pathToProcesses + value);
+    // util::saveStringAsFile(process, parameter.pathToProcesses + processName);
 
-    UA_Variant_setScalarCopy(output, &inputValue, &UA_TYPES[UA_TYPES_STRING]);
-    UA_String_clear(&inputValue);
-    
+    Engine::executeProcess(parameter.pathToProcesses + processName);
 
+    // TODO Fehlerbehandlung einbauen und nicht immer statuscod_good zurueckgeben
     return UA_STATUSCODE_GOOD;
 
 }
 
 void opcuaServer::createAdressSpace()
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create Addressspace");
 
     char locale[] = "de-GER";
     char str[] = "A String";
@@ -95,19 +92,31 @@ void opcuaServer::createAdressSpace()
 
 opcuaServer::opcuaServer()
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create OPC UA Server");
 
     server = UA_Server_new();
-	UA_ServerConfig_setDefault(UA_Server_getConfig(server));
+    UA_ServerConfig* config = UA_Server_getConfig(server);
+    UA_ServerConfig_setDefault(config);
+
+    UA_ServerConfig_setMinimal(config, 1, NULL);
+    UA_String_clear(&config->applicationDescription.applicationUri);
+    config->applicationDescription.applicationUri = UA_String_fromChars("urn:workflow-engine");
+
+
     createAdressSpace();
 
 }
 
 void opcuaServer::startServer()
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Start OPC UA Server Instance");
+
     UA_StatusCode status = UA_Server_run(server, &running);
 }
 
 opcuaServer::~opcuaServer()
 {
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Delete OPC UA Server Instance");
+
     UA_Server_delete(server);
 }

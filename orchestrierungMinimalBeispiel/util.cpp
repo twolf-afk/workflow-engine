@@ -1,10 +1,13 @@
 #include "util.h"
 
+#include "logUtil.h"
+
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>
 #include <boost/algorithm/string.hpp>
 
 #include <ctime>
+#include <fstream>
 
 std::string util::getDateAndTime()
 {
@@ -50,4 +53,19 @@ char* util::stringToChar(std::string string)
 	char* Char = new char[lengthOfChar];
 	strcpy_s(Char, lengthOfChar, string.c_str());
 	return Char;
+}
+
+void util::saveStringAsFile(std::string string, std::string filename)
+{
+
+	logUtil::writeLogMessageToConsoleAndFile("debug", typeid(util).name(), __LINE__, "Save string: " + string + " in file: " + filename);
+
+	std::ifstream checkLogFile(filename.c_str());
+
+	std::ofstream logFile;
+	logFile.open(filename, std::ios_base::app);
+
+	logFile << string;
+	logFile.close();
+
 }

@@ -44,6 +44,12 @@
     <ClCompile Include="opcuaServer.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="open62541Util.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="serviceInput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logUtil.h" />
@@ -57,5 +63,7 @@
     <ClInclude Include="indexFileParser.h" />
     <ClInclude Include="orchestrierung.h" />
     <ClInclude Include="opcuaServer.h" />
+    <ClInclude Include="open62541Util.h" />
+    <ClInclude Include="serviceInput.h" />
   </ItemGroup>
 </Project>

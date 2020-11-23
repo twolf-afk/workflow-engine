@@ -150,8 +150,10 @@
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
     <ClCompile Include="opcuaServer.cpp" />
+    <ClCompile Include="open62541Util.cpp" />
     <ClCompile Include="orchestrierung.cpp" />
     <ClCompile Include="service.cpp" />
+    <ClCompile Include="serviceInput.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="engine.cpp" />
     <ClCompile Include="wsdlParser.cpp" />
@@ -163,8 +165,10 @@
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="opcuaServer.h" />
+    <ClInclude Include="open62541Util.h" />
     <ClInclude Include="orchestrierung.h" />
     <ClInclude Include="service.h" />
+    <ClInclude Include="serviceInput.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="wsdlParser.h" />
