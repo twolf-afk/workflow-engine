@@ -5,8 +5,7 @@
 #include <string>
 #include <vector>
 
-class util
-{
+class util {
 
 public:
 
@@ -18,9 +17,19 @@ public:
 
 	static std::string boolToString(bool value);
 
-	static char* stringToChar(std::string);
+	static bool stringToBool(std::string string);
 
 	static void saveStringAsFile(std::string string, std::string filename);
+
+	static std::vector<std::string> getFilesInDirectory(std::string directory);
+
+	static void createDirectory(std::string pathOfDirectory);
+
+	static std::string getFile(std::string filename);
+
+	static bool stringContainsSubstring(std::string, std::string substring);
+
+	static std::wstring stdStringToLPCWSTR(std::string string);
 
 };
 

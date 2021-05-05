@@ -4,8 +4,7 @@
 
 #include <string>
 
-class serviceInput
-{
+class serviceInput {
 
 private:
 

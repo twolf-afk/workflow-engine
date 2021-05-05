@@ -7,8 +7,8 @@
 #include <exception>
 #include <string>
 
-class OpcUAException : public std::exception
-{
+class OpcUAException : public std::exception {
+
 private:
 
 	std::string errorMessage;

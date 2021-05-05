@@ -10,24 +10,25 @@
 #include <string>
 #include <queue>
 
-class OpcUAClient
-{
+class OpcUAClient {
 
 private:
 
 	UA_Client* client;
 
-	void writeValue(UA_NodeId nodeID, UA_Variant* variant);
-	bool readValue(UA_NodeId nodeID, UA_Variant variant);
-
 public:
 
+	void writeValue(UA_NodeId nodeID, UA_Variant* variant);
+
+	UA_Variant readValue(UA_NodeId nodeID, UA_Variant variant);
 
 	void createAndConnectClient(std::string url);
 
-	void writeService(std::queue<serviceInput> inputs);
+	UA_BrowseResponse browseService(std::string nodeId);
 
-	bool readService(std::queue<serviceInput> outputs);
+	void writeService(serviceInput inputs);
+
+	UA_Variant readService(serviceInput outputs);
 
 	std::string callMethod(std::string inputArgument, std::string strNodeId);
 
@@ -36,4 +37,3 @@ public:
 };
 
 #endif
-

@@ -24,7 +24,7 @@
     <ProjectGuid>{a4dfdddd-b22c-414c-ad66-649e93ceca5e}</ProjectGuid>
     <RootNamespace>orchestrierungMinimalBeispiel</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>orchestrierung</ProjectName>
+    <ProjectName>Workflow-Engine</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -131,46 +131,53 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\xerces-c\include;D:\Arbeit\MSVisualStudio_Workspace\masterarbeit\orchestrierung\libs\boost.1.72.0.0\lib\native\include;C:\Program Files %28x86%29\open62541\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\libs\open62541\include;..\..\libs\xerces-c\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\xerces-c\lib;C:\Program Files %28x86%29\open62541\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\libs\open62541\lib;..\..\libs\xerces-c\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>open62541.lib;ws2_32.lib;xerces-c_3.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="configFileUtil.cpp" />
+    <ClCompile Include="createServices.cpp" />
     <ClCompile Include="indexFileParser.cpp" />
     <ClCompile Include="logUtil.cpp" />
     <ClCompile Include="opcuaClient.cpp" />
     <ClCompile Include="OpcUAException.cpp" />
     <ClCompile Include="opcuaServer.cpp" />
     <ClCompile Include="open62541Util.cpp" />
-    <ClCompile Include="orchestrierung.cpp" />
-    <ClCompile Include="service.cpp" />
+    <ClCompile Include="workflowEngine.cpp" />
     <ClCompile Include="serviceInput.cpp" />
+    <ClCompile Include="serviceLibCommunication.cpp" />
+    <ClCompile Include="serviceTemplate.cpp" />
     <ClCompile Include="util.cpp" />
     <ClCompile Include="engine.cpp" />
+    <ClCompile Include="init.cpp" />
     <ClCompile Include="wsdlParser.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="configFileUtil.h" />
+    <ClInclude Include="createServices.h" />
     <ClInclude Include="indexFileParser.h" />
     <ClInclude Include="logUtil.h" />
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="opcuaServer.h" />
     <ClInclude Include="open62541Util.h" />
-    <ClInclude Include="orchestrierung.h" />
-    <ClInclude Include="service.h" />
+    <ClInclude Include="workflowEngine.h" />
     <ClInclude Include="serviceInput.h" />
+    <ClInclude Include="serviceLibCommunication.h" />
+    <ClInclude Include="serviceTemplate.h" />
     <ClInclude Include="util.h" />
     <ClInclude Include="engine.h" />
+    <ClInclude Include="init.h" />
     <ClInclude Include="wsdlParser.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

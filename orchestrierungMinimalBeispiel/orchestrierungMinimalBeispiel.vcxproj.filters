@@ -29,16 +29,10 @@
     <ClCompile Include="engine.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="service.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="wsdlParser.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="indexFileParser.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
-    <ClCompile Include="orchestrierung.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="opcuaServer.cpp">
@@ -47,7 +41,22 @@
     <ClCompile Include="open62541Util.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="createServices.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="serviceTemplate.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
     <ClCompile Include="serviceInput.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="serviceLibCommunication.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="workflowEngine.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="init.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
@@ -58,12 +67,15 @@
     <ClInclude Include="opcuaClient.h" />
     <ClInclude Include="OpcUAException.h" />
     <ClInclude Include="engine.h" />
-    <ClInclude Include="service.h" />
     <ClInclude Include="wsdlParser.h" />
     <ClInclude Include="indexFileParser.h" />
-    <ClInclude Include="orchestrierung.h" />
     <ClInclude Include="opcuaServer.h" />
     <ClInclude Include="open62541Util.h" />
+    <ClInclude Include="createServices.h" />
+    <ClInclude Include="serviceTemplate.h" />
     <ClInclude Include="serviceInput.h" />
+    <ClInclude Include="serviceLibCommunication.h" />
+    <ClInclude Include="workflowEngine.h" />
+    <ClInclude Include="init.h" />
   </ItemGroup>
 </Project>

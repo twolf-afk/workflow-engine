@@ -4,8 +4,7 @@
 
 #include <open62541/server.h>
 
-class opcuaServer
-{
+class opcuaServer {
 
 public:
 
@@ -19,7 +18,11 @@ private:
 	UA_Server* server;
 	UA_Boolean running = true;
 
-	void createAdressSpace();
+	UA_Argument createStringArgument(char argumentName[]);
+	UA_MethodAttributes createMethodAttributes(char methodName[]);
+
+	void createExecuteProcessMethod();
+	void createExecuteProcessStepMethod();
 
 };
 

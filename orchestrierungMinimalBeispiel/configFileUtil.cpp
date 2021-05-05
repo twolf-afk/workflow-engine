@@ -3,28 +3,31 @@
 #include <fstream>
 #include <string>
 
-configFileUtil::confParam configFileUtil::readConfig()
-{
+configFileUtil::confParam configFileUtil::readConfig() {
+
 	confParam parameter;
 
 	std::ifstream file("../dbconfiguration.cfg");
 	std::string strLine;
 
-	while (std::getline(file, strLine))
-	{
+	while (std::getline(file, strLine)) {
 
-		if (strLine.find("services") != std::string::npos)
-		{
+		if (strLine.find("services") != std::string::npos) {
 			parameter.pathToServices = strLine.substr(strLine.find("=") + 2, strLine.length());
 		}
 
-		if (strLine.find("processes") != std::string::npos)
-		{
+		if (strLine.find("processes") != std::string::npos) {
 			parameter.pathToProcesses = strLine.substr(strLine.find("=") + 2, strLine.length());
 		}
 
+		if (strLine.find("serviceLibURL") != std::string::npos)	{
+			parameter.serviceLibURL = strLine.substr(strLine.find("=") + 2, strLine.length());
+		}
+
+		if (strLine.find("serverToBrowse") != std::string::npos) {
+			parameter.serverToBrowse = strLine.substr(strLine.find("=") + 2, strLine.length());
+		}
 	}
 
 	return parameter;
-
 }

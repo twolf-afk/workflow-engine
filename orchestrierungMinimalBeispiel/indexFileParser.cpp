@@ -6,20 +6,19 @@
 
 using namespace xercesc_3_2;
 
-indexFileParser::indexFileParser(std::string filename)
-{
+indexFileParser::indexFileParser(std::string filename) {
+
     initXmlParserGetDocumentGetRootElement(filename);
 }
 
 // TODO diese funktion ist ein zu eins gleich mit der aus wsdlParser -> dopplung -> nicht gut
-void indexFileParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
-{
+void indexFileParser::initXmlParserGetDocumentGetRootElement(std::string fileName) {
+
     XMLPlatformUtils::Initialize();
 
     // TODO eigene Exception schreiben
     // TODO aufruf von try und catch block in eigene funktionen auslagern
-    try
-    {
+    try {
         XercesDOMParser* parser = new XercesDOMParser();
         parser->setValidationScheme(XercesDOMParser::Val_Always);
         parser->setDoNamespaces(true);    // optional
@@ -30,19 +29,16 @@ void indexFileParser::initXmlParserGetDocumentGetRootElement(std::string fileNam
         DOMDocument* xmlDoc = parser->getDocument();
         rootElement = xmlDoc->getDocumentElement();
 
-    }
-    catch (xercesc::XMLException& e)
-    {
+    } catch (xercesc::XMLException& e) {
         const XMLCh* xmlChErrorMessage = e.getMessage();
         std::string errorMessage = XMLString::transcode(xmlChErrorMessage);
 
         logUtil::writeLogMessageToConsoleAndFile("error", typeid(indexFileParser).name(), __LINE__, errorMessage);
-
     }
 }
 
-std::map<int, std::string> indexFileParser::getServices()
-{
+std::map<int, std::string> indexFileParser::getServices() {
+
     logUtil::writeLogMessageToConsoleAndFile("debug", typeid(indexFileParser).name(), __LINE__, "Get Services from process");
 
     std::map<int, std::string> process;
@@ -52,8 +48,8 @@ std::map<int, std::string> indexFileParser::getServices()
     DOMNodeList* services = rootElement->getElementsByTagName(tagName);
     const XMLSize_t serviceCount = services->getLength();
 
-    for (XMLSize_t  i = 0; i < serviceCount; i++)
-    {
+    for (XMLSize_t  i = 0; i < serviceCount; i++) {
+
         DOMNode* node = services->item(i);
         DOMElement* currentService = dynamic_cast<DOMElement*>(node);
         
@@ -71,7 +67,6 @@ std::map<int, std::string> indexFileParser::getServices()
         std::string text = XMLString::transcode(xmlChText);
 
         process[sequenceNumber] = text;
-
     }
 
     return process;
