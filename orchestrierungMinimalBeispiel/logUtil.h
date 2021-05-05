@@ -5,8 +5,7 @@
 #include <string>
 #include <typeinfo>
 
-class logUtil
-{
+class logUtil {
 
 public:
 

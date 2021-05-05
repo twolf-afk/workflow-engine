@@ -2,53 +2,124 @@
 
 #include "logUtil.h"
 #include "engine.h"
-#include "configFileUtil.h"
 #include "open62541Util.h"
-#include "OpcUAClient.h"
 #include "util.h"
 
 #include <open62541/server_config_default.h>
 #include <open62541/plugin/log_stdout.h>
+#include <open62541/client_config_default.h>
+#include <open62541/client.h>
+#include <open62541/server.h>
 
-#include <iostream>
+#include <signal.h>
+#include <stdlib.h>
 
-static UA_StatusCode executeProcessCallback
-(
+UA_Argument opcuaServer::createStringArgument(char argumentName[]) {
+
+    char locale[] = "de-GER";
+    char str[] = "A String";
+
+    UA_Argument argument;
+    UA_Argument_init(&argument);
+    argument.name = UA_STRING(argumentName);
+    argument.description = UA_LOCALIZEDTEXT(locale, str);
+    argument.dataType = UA_TYPES[UA_TYPES_STRING].typeId;
+    argument.valueRank = UA_VALUERANK_SCALAR;
+
+    return argument;
+}
+
+UA_MethodAttributes opcuaServer::createMethodAttributes(char methodName[]) {
+
+    char locale[] = "de-GER";
+
+    UA_MethodAttributes methodeAttribute = UA_MethodAttributes_default;
+    methodeAttribute.description = UA_LOCALIZEDTEXT(locale, methodName);
+    methodeAttribute.displayName = UA_LOCALIZEDTEXT(locale, methodName);
+    methodeAttribute.executable = true;
+    methodeAttribute.userExecutable = true;
+
+    return methodeAttribute;
+}
+
+static UA_StatusCode executeProcessStepCallBack(
+    UA_Server* server, const UA_NodeId* sessionId,
+    void* sessionHandle, const UA_NodeId* methodId,
+    void* methodContext, const UA_NodeId* objectId,
+    void* objectContext, size_t inputSize,
+    const UA_Variant* input, size_t outputSize,
+    UA_Variant* output) {
+
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "executeProcessStep was called");
+
+    UA_String* firstInput = (UA_String*)input[0].data;
+
+    std::string inputString = open62541Util::uaStringPtrToStdString(firstInput);
+    std::vector<std::string> inputStringVector = util::splitString(inputString, ";");
+
+    std::string processName = inputStringVector[0];
+    std::string sequenceNumber = inputStringVector[1];
+
+    Engine::getProcessFromServiceLib(processName);
+    Engine::getServicesOfProcessFromServiceLib(processName);
+
+    Engine::executeProcessStep(processName, std::atoi(sequenceNumber.c_str()));
+
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "executeProcessStep done");
+
+    return UA_STATUSCODE_GOOD;
+}
+
+void opcuaServer::createExecuteProcessStepMethod() {
+
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create Execute Process Step Method");
+
+    char inputProcessName[] = "Process Name;SequenceNumber";
+    UA_Argument inputArgument = createStringArgument(inputProcessName);
+
+    char outputText[] = "Result";
+    UA_Argument outputArgument = createStringArgument(outputText);
+
+    char methodeName[] = "Execute Process Step";
+    UA_MethodAttributes methodAttributes = createMethodAttributes(methodeName);
+    UA_MethodAttributes execAttr = UA_MethodAttributes_default;
+
+    UA_Server_addMethodNode(
+        server, UA_NODEID_STRING(1, methodeName),
+        UA_NODEID_NUMERIC(0, UA_NS0ID_OBJECTSFOLDER),
+        UA_NODEID_NUMERIC(0, UA_NS0ID_HASCOMPONENT),
+        UA_QUALIFIEDNAME(1, methodeName),
+        execAttr, &executeProcessStepCallBack,
+        1, &inputArgument, 1, &outputArgument, NULL, NULL
+    );
+}
+
+static UA_StatusCode executeProcessCallback(
     UA_Server* server, const UA_NodeId* sessionId,
     void* sessionHandle, const UA_NodeId* methodId,
     void* methodContext, const UA_NodeId* objectId,
     void* objectContext, size_t inputSize, 
     const UA_Variant* input, size_t outputSize,
-    UA_Variant* output
-)
-{
+    UA_Variant* output) {
+
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "executeProcessCallback was called");
 
-    UA_String* firstInput = (UA_String*)input->data;
-    std::string processName = open62541Util::uaStringPtrToStdString(firstInput);
+    UA_String* Input = (UA_String*)input->data;
+    std::string processName = open62541Util::uaStringPtrToStdString(Input);
+
+    Engine::getProcessFromServiceLib(processName);
+    Engine::getServicesOfProcessFromServiceLib(processName);
 
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Input Argument: " + processName);
 
-    // OpcUAClient client;
-    // client.createAndConnectClient("opc.tcp://DESKTOP-0AULV4D:2/");
+    Engine::executeProcess(processName);
 
-    // std::string process = client.callMethod(processName, "ns=1;s=Get Process");
-
-    // client.cleanClient();
-
-    configFileUtil::confParam parameter = configFileUtil::readConfig();
-    // util::saveStringAsFile(process, parameter.pathToProcesses + processName);
-
-    Engine::executeProcess(parameter.pathToProcesses + processName);
-
-    // TODO Fehlerbehandlung einbauen und nicht immer statuscod_good zurueckgeben
     return UA_STATUSCODE_GOOD;
-
 }
 
-void opcuaServer::createAdressSpace()
-{
-    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create Addressspace");
+void opcuaServer::createExecuteProcessMethod() {
+
+    logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create Exeucte Process Method");
 
     char locale[] = "de-GER";
     char str[] = "A String";
@@ -61,7 +132,6 @@ void opcuaServer::createAdressSpace()
     inputArgument.dataType = UA_TYPES[UA_TYPES_STRING].typeId;
     inputArgument.valueRank = UA_VALUERANK_SCALAR;
 
-
     UA_Argument outputArgument;
     UA_Argument_init(&outputArgument);
     char outputText[] = "Result";
@@ -70,7 +140,6 @@ void opcuaServer::createAdressSpace()
     outputArgument.dataType = UA_TYPES[UA_TYPES_STRING].typeId;
     outputArgument.valueRank = UA_VALUERANK_SCALAR;
 
-
     UA_MethodAttributes execAttr = UA_MethodAttributes_default;
     char executeProcess[] = "Execute Process";
     execAttr.description = UA_LOCALIZEDTEXT(locale, executeProcess);
@@ -78,44 +147,40 @@ void opcuaServer::createAdressSpace()
     execAttr.executable = true;
     execAttr.userExecutable = true;
 
-    UA_Server_addMethodNode
-    (
-        server, UA_NODEID_NUMERIC(1, 62541),
+    UA_Server_addMethodNode(
+        server, UA_NODEID_STRING(1, executeProcess),
         UA_NODEID_NUMERIC(0, UA_NS0ID_OBJECTSFOLDER),
         UA_NODEID_NUMERIC(0, UA_NS0ID_HASCOMPONENT),
         UA_QUALIFIEDNAME(1, executeProcess),
         execAttr, &executeProcessCallback,
         1, &inputArgument, 1, &outputArgument, NULL, NULL
     );
-
 }
 
-opcuaServer::opcuaServer()
-{
+opcuaServer::opcuaServer() {
+
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Create OPC UA Server");
 
     server = UA_Server_new();
     UA_ServerConfig* config = UA_Server_getConfig(server);
-    UA_ServerConfig_setDefault(config);
 
-    UA_ServerConfig_setMinimal(config, 1, NULL);
+    UA_ServerConfig_setMinimal(config, 10001, NULL);
     UA_String_clear(&config->applicationDescription.applicationUri);
     config->applicationDescription.applicationUri = UA_String_fromChars("urn:workflow-engine");
 
-
-    createAdressSpace();
-
+    createExecuteProcessMethod();
+    createExecuteProcessStepMethod();
 }
 
-void opcuaServer::startServer()
-{
+void opcuaServer::startServer() {
+
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Start OPC UA Server Instance");
 
     UA_StatusCode status = UA_Server_run(server, &running);
 }
 
-opcuaServer::~opcuaServer()
-{
+opcuaServer::~opcuaServer() {
+
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(opcuaServer).name(), __LINE__, "Delete OPC UA Server Instance");
 
     UA_Server_delete(server);

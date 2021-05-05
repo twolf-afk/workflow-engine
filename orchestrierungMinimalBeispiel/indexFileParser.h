@@ -7,13 +7,11 @@
 #include <string>
 #include <map>
 
-class indexFileParser
-{
+class indexFileParser {
 
 private:
 
 	xercesc_3_2::DOMElement* rootElement;
-
 
 	void initXmlParserGetDocumentGetRootElement(std::string fileName);
 

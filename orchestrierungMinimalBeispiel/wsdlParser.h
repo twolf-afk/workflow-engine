@@ -9,8 +9,7 @@
 #include <string>
 #include <queue>
 
-class wsdlParser
-{
+class wsdlParser {
 
 private:
 

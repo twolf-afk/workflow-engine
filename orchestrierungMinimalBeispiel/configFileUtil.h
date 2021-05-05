@@ -5,8 +5,7 @@
 #include <string>
 #include <list>
 
-class configFileUtil
-{
+class configFileUtil {
 
 public:
 
@@ -14,6 +13,10 @@ public:
 
 		std::string pathToServices;
 		std::string pathToProcesses;
+
+		std::string serviceLibURL;
+
+		std::string serverToBrowse;
 
 	};
 

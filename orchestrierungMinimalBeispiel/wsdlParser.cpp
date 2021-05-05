@@ -1,30 +1,26 @@
 #include "wsdlParser.h"
-
+// 50
 #include "logUtil.h"
 
 #include <xercesc/parsers/XercesDOMParser.hpp>
 
 #include <iostream>
 
-std::string wsdlParser::getUrl()
-{
+std::string wsdlParser::getUrl() {
     return url;
 }
 
-std::queue<serviceInput> wsdlParser::getInputs()
-{
+std::queue<serviceInput> wsdlParser::getInputs() {
     return inputs;
 }
 
-std::queue<serviceInput> wsdlParser::getOutputs()
-{
+std::queue<serviceInput> wsdlParser::getOutputs() {
     return outputs;
 }
 
 // TODO index gibt das element an, welches aus der Liste ausgewaehlt wird
 // kann zu problemen fuehren, wenn sich die Reihenfolge in der xml aendert
-xercesc_3_2::DOMElement* wsdlParser::getElementByNameAndIndexFromElement(std::string elementTagName, int index, xercesc_3_2::DOMElement* element)
-{
+xercesc_3_2::DOMElement* wsdlParser::getElementByNameAndIndexFromElement(std::string elementTagName, int index, xercesc_3_2::DOMElement* element) {
 
     XMLCh* tagName = xercesc_3_2::XMLString::transcode(elementTagName.c_str());
     xercesc_3_2::DOMNodeList* nodes = element->getElementsByTagName(tagName);
@@ -34,17 +30,16 @@ xercesc_3_2::DOMElement* wsdlParser::getElementByNameAndIndexFromElement(std::st
     return childElement;
 }
 
-std::string wsdlParser::getAttributeAndConvertToString(xercesc_3_2::DOMElement* element, std::string attributeName)
-{
+std::string wsdlParser::getAttributeAndConvertToString(xercesc_3_2::DOMElement* element, std::string attributeName) {
 
     XMLCh* xmlChAttributeName = xercesc_3_2::XMLString::transcode(attributeName.c_str());
     const XMLCh* xmlChAttributeValue = element->getAttribute(xmlChAttributeName);
 
     return xercesc_3_2::XMLString::transcode(xmlChAttributeValue);
 }
+// 36
+void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName) {
 
-void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
-{
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Initialization of xml parser");
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Filename: " + fileName);
 
@@ -52,8 +47,7 @@ void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 
     // TODO eigene Exception schreiben
     // TODO aufrufe in try catch block in eigene funktionen auslagern
-    try
-    {
+    try {
         xercesc_3_2::XercesDOMParser* parser = new xercesc_3_2::XercesDOMParser();
         parser->setValidationScheme(xercesc_3_2::XercesDOMParser::Val_Always);
         parser->setDoNamespaces(true);
@@ -64,9 +58,7 @@ void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
         xercesc_3_2::DOMDocument* xmlDoc = parser->getDocument();
         rootElement = xmlDoc->getDocumentElement();
         
-    }
-    catch (xercesc::XMLException& e)
-    {
+    } catch (xercesc::XMLException& e) {
         const XMLCh* xmlChErrorMessage = e.getMessage();
         std::string errorMessage = xercesc_3_2::XMLString::transcode(xmlChErrorMessage);
 
@@ -74,9 +66,8 @@ void wsdlParser::initXmlParserGetDocumentGetRootElement(std::string fileName)
 
     }
 }
-
-void wsdlParser::getUrlFromDocument()
-{
+// 24
+void wsdlParser::getUrlFromDocument() {
     
     xercesc_3_2::DOMElement* soapElement = getElementByNameAndIndexFromElement("soap:address", 0, rootElement);
 
@@ -86,9 +77,9 @@ void wsdlParser::getUrlFromDocument()
     
 }
 
-serviceInput wsdlParser::getArgumentsFromWsdl(xercesc_3_2::DOMElement* element, int i)
-{
-    xercesc_3_2::DOMElement* element = getElementByNameAndIndexFromElement("element", i, element);
+serviceInput wsdlParser::getArgumentsFromWsdl(xercesc_3_2::DOMElement* ParentElement, int i) {
+
+    xercesc_3_2::DOMElement* element = getElementByNameAndIndexFromElement("element", i, ParentElement);
 
     serviceInput serviceInputArguments = serviceInput();
 
@@ -101,35 +92,33 @@ serviceInput wsdlParser::getArgumentsFromWsdl(xercesc_3_2::DOMElement* element, 
     std::string value = getAttributeAndConvertToString(element, "value");
     serviceInputArguments.setValue(value);
 
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "nodeID: " + nodeId);
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "datatype: " + datatype);
-    logUtil::writeLogMessageToConsoleAndFile("debug", typeid(wsdlParser).name(), __LINE__, "value: " + value);
+    return serviceInputArguments;
 }
+// 12
+void wsdlParser::getInput() {
 
-void wsdlParser::getInput()
-{
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Parse input information");
 
     xercesc_3_2::DOMElement* inputElements = getElementByNameAndIndexFromElement("all", 0, rootElement);
     size_t childsCount = inputElements->getChildElementCount();
     
-    for (size_t i = 0; i < childsCount; i++)
-    {
+    for (size_t i = 0; i < childsCount; i++) {
+
         serviceInput argument = wsdlParser::getArgumentsFromWsdl(inputElements, i);
 
         inputs.push(argument);
     }
 }
 
-void wsdlParser::getOutput()
-{
+void wsdlParser::getOutput() {
+
     logUtil::writeLogMessageToConsoleAndFile("info", typeid(wsdlParser).name(), __LINE__, "Parse output information");
 
     xercesc_3_2::DOMElement* inputElements = getElementByNameAndIndexFromElement("all", 1, rootElement);
-    int childsCount = inputElements->getChildElementCount();
+    size_t childsCount = inputElements->getChildElementCount();
 
-    for (int i = 0; i < childsCount; i++)
-    {
+    for (size_t i = 0; i < childsCount; i++) {
+
         serviceInput argument = wsdlParser::getArgumentsFromWsdl(inputElements, i);
 
         outputs.push(argument);
